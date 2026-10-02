@@ -1,0 +1,7 @@
+title: GoWeAre
+description: 그이어(GoWeAre) 앱 법률 고지
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true

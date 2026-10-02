@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BedSloth — Delete your account</title>
+<script>
+  // 브라우저 언어에 맞는 문서로 보낸다. 없는 언어는 영어로.
+  (function () {
+    var available = ['ko', 'en'];
+    var langs = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < langs.length; i++) {
+      var code = String(langs[i]).slice(0, 2).toLowerCase();
+      if (available.indexOf(code) !== -1) { location.replace('account-deletion-' + code); return; }
+    }
+    location.replace('account-deletion-en');
+  })();
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 24px">
+<p>Delete your account</p>
+<ul><li><a href="account-deletion-ko">한국어</a></li><li><a href="account-deletion-en">English</a></li></ul>
+</body>
+</html>
