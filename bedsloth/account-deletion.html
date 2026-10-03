@@ -8,7 +8,7 @@
   // 브라우저 언어에 맞는 문서로 보낸다(앱과 같은 규칙). 중국어는 번체이거나 대만·홍콩·마카오일 때만
   // 번체, 간체는 다음 선호 언어로 넘어간다. 맞는 언어가 없으면 영어.
   (function () {
-    var available = ['ko', 'en', 'zh-Hant'];
+    var available = ['ko', 'en', 'ja', 'zh-Hant'];
     function pick(tag) {
       var parts = String(tag).toLowerCase().split(/[-_]/);
       if (parts[0] !== 'zh') return parts[0];
@@ -27,6 +27,6 @@
 </head>
 <body style="font-family: system-ui, sans-serif; padding: 24px">
 <p>Delete your account</p>
-<ul><li><a href="account-deletion-ko">한국어</a></li><li><a href="account-deletion-en">English</a></li><li><a href="account-deletion-zh-Hant">繁體中文</a></li></ul>
+<ul><li><a href="account-deletion-ko">한국어</a></li><li><a href="account-deletion-en">English</a></li><li><a href="account-deletion-ja">日本語</a></li><li><a href="account-deletion-zh-Hant">繁體中文</a></li></ul>
 </body>
 </html>
