@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BedSloth — Privacy Policy</title>
 <script>
-  // 브라우저 언어에 맞는 문서로 보낸다. 중국어는 간체 브라우저도 번체로, 없는 언어는 영어로.
+  // 브라우저 언어에 맞는 문서로 보낸다(앱과 같은 규칙). 중국어는 번체이거나 대만·홍콩·마카오일 때만
+  // 번체, 간체는 다음 선호 언어로 넘어간다. 맞는 언어가 없으면 영어.
   (function () {
-    var available = ['ko', 'en', 'ja', 'zh'];
+    var available = ['ko', 'en', 'ja', 'zh-Hant'];
+    function pick(tag) {
+      var parts = String(tag).toLowerCase().split(/[-_]/);
+      if (parts[0] !== 'zh') return parts[0];
+      var traditional = parts.indexOf('hant') !== -1 ||
+        (parts.indexOf('hans') === -1 && ['tw', 'hk', 'mo'].some(function (r) { return parts.indexOf(r) !== -1; }));
+      return traditional ? 'zh-Hant' : null;
+    }
     var langs = navigator.languages || [navigator.language || 'en'];
     for (var i = 0; i < langs.length; i++) {
-      var code = String(langs[i]).slice(0, 2).toLowerCase();
-      if (available.indexOf(code) !== -1) { location.replace('privacy-policy-' + (code === 'zh' ? 'zh-Hant' : code)); return; }
+      var code = pick(langs[i]);
+      if (code && available.indexOf(code) !== -1) { location.replace('privacy-policy-' + code); return; }
     }
     location.replace('privacy-policy-en');
   })();
