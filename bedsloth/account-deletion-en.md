@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-03**
+**Last updated: 2026-10-05**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -50,7 +50,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Your anonymous account identifier and (if linked) the Google / Apple account link, including the email address
 - Nickname, character (avatar) and daily step limits
 - Daily step totals and their source (device sensor / health data)
-- Streaks and badges, Streak Savers and postpone passes owned/used
+- Streaks, badges and achievements, Streak Savers and postpone passes owned/used, and exemption records
 - Quest completions and fluff, decoration purchases and equipped decorations
 - Friendships, block records, and blankets sent and received
 - Blanket party membership and party invitations sent and received
@@ -72,6 +72,10 @@ Deletion cannot be undone.
   and supply of goods under Korea's Act on the Consumer Protection in Electronic Commerce, and
   then deleted. They are unlinked from your account, but the account identifier string at the time
   remains.
+- **Ad reward verification records:** records of watching an ad to postpone today (ad reward
+  transaction ID, date, step count, result, time) are kept for support and to prevent double
+  rewards, but your deleted account's identifier is removed so the record no longer shows
+  whose it was.
 - **Purchase records:** In-app purchase and subscription history may be kept for the legally
   required period under the policies of Google Play / the App Store and our purchase management
   service (RevenueCat). Deleting your account **does not cancel a subscription** — please cancel

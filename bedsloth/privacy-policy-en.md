@@ -4,8 +4,8 @@ lang: en
 
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-03**
-**Effective date: 2026-10-03**
+**Last updated: 2026-10-05**
+**Effective date: 2026-10-05**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -92,6 +92,8 @@ or health data). This is used to prevent ranking manipulation.
 |---|---|
 | Streak records and badges | Providing features |
 | Postpone passes / Streak Savers owned and used | Providing features |
+| Today's exemption record (date, whether it came from a postpone pass or an ad, and for an ad the step count at that moment) | Judging streaks and party streaks |
+| Achievement unlocks (achievement, time unlocked) | Achievements and their rewards |
 | "Not-to-do" quest completions (date, quest) | Calculating fluff rewards |
 | Decoration purchases (item, fluff spent, time) | Decoration feature, fluff balance |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
@@ -103,8 +105,8 @@ payments.
 #### Information stored only on your device
 
 Your weekday step limits, the last date you opened the app (for reminders to users who
-haven't opened it for a while), notification history, whether a postpone pass is applied
-today, and today's steps for the home-screen widget are stored **only on your device**
+haven't opened it for a while), notification history, whether the app has
+asked you for a rating, which "Not-to-do" settlements you have seen, and today's steps for the home-screen widget are stored **only on your device**
 and are not sent to our server. They are excluded from cloud backup and device transfer
 and are deleted when you uninstall the app. If you add the Android home-screen widget,
 today's steps and limit appear on your home screen and may be seen by anyone who can see
@@ -125,7 +127,7 @@ your device.
   device settings.
 - **Purchase records (RevenueCat)** — If you make an in-app purchase, **your app
   account identifier** is sent to RevenueCat and linked to your purchase history so we
-  can check purchase and subscription status. For Streak Savers, RevenueCat notifies
+  can check purchase and subscription status. For Streak Savers and postpone passes, RevenueCat notifies
   our server after payment, and the server records that notification (event ID,
   product, account identifier, time) to prevent double delivery. **The app never
   receives or stores card numbers or other payment details**; Google/Apple process
@@ -169,6 +171,12 @@ Messaging tokens.
      advertising identifier (IDFA) may be used.
 - You can use every feature of the app without consenting. In that case you may see
   non-personalized ads or, depending on your region, no ads.
+- **Watching an ad to postpone today (rewarded ads):** when you use this feature, the app
+  stores today's date and your step count at that moment **directly on our server** and
+  receives a random verification code. To confirm you watched the whole ad, **only this
+  code** is passed to Google (AdMob); your step count and account identifier are not sent
+  to Google. To prevent double rewards, the server stores the verification record (ad
+  reward transaction ID, date, step count, result, time).
 
 ### 3.7 Friends, blocking, "Tuck in" blankets, blanket parties and invites
 
@@ -253,9 +261,9 @@ following companies to the extent needed to run the service.
 
 | Processor | Task | Privacy policy |
 |---|---|---|
-| Supabase Inc. | Storing accounts and step records, ranking, storing friend / party / decoration / report records | https://supabase.com/privacy |
+| Supabase Inc. | Storing accounts and step records, ranking, storing friend / party / decoration / achievement / exemption / report records | https://supabase.com/privacy |
 | Google LLC (Firebase Crashlytics / Analytics) | Crash reports, usage statistics | https://policies.google.com/privacy |
-| Google LLC (AdMob, UMP consent message) | Serving ads, managing ad consent | https://policies.google.com/technologies/ads |
+| Google LLC (AdMob, UMP consent message) | Serving ads, verifying rewarded ad views, managing ad consent | https://policies.google.com/technologies/ads |
 | RevenueCat, Inc. | Managing in-app purchase and subscription status | https://www.revenuecat.com/privacy |
 | Google LLC (Sign-in) | Google account linking (only if you choose it) | https://policies.google.com/privacy |
 | Apple Inc. (Sign in with Apple) | Apple account linking and token revocation on account deletion (only if you choose it) | https://www.apple.com/legal/privacy/ |
@@ -267,8 +275,8 @@ applicable laws, we disclose the following.
 
 | Recipient | Country | Items | When and how | Retention |
 |---|---|---|---|---|
-| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits, friend / party / decoration / report records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
-| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information | Whenever you use the app, encrypted | Per each company's policy |
+| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits, friend / party / decoration / achievement / exemption / report records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
+| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch an ad to postpone today) a random verification code | Whenever you use the app, encrypted | Per each company's policy |
 | RevenueCat, Inc. | United States | Account identifier, purchase and subscription status | When you make a purchase, encrypted | Per each company's policy |
 | Apple Inc. (Sign in with Apple) | United States | (if linked) sign-in requests, token revocation request on account deletion | When you link or delete, encrypted | Per each company's policy |
 
@@ -300,7 +308,7 @@ Coupang or Amazon.
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
 - When you delete your account, your step records, nickname, limits, streaks and
-  badges, Streak Savers, quests and fluff, decorations, friends / blocks / blankets,
+  badges, achievements, Streak Savers, postpone passes and exemption records, quests and fluff, decorations, friends / blocks / blankets,
   party membership and invitations, invite code, reports you made or received, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
@@ -317,6 +325,10 @@ Coupang or Amazon.
     Electronic Commerce, and then deleted. They are unlinked from your account but the
     account identifier string at the time remains, and they are not used for any purpose
     other than this legal retention.
+  - **Ad reward verification records:** records of watching an ad to postpone today (ad
+    reward transaction ID, date, step count, result, time) are kept for support and to
+    prevent double rewards, but your deleted account's identifier is removed so the record
+    no longer shows whose it was.
   - Purchase records held by Google / Apple / RevenueCat follow their own policies.
 - Crash reports (Firebase Crashlytics) are deleted automatically after 90 days, and user-level usage
   statistics (Firebase Analytics) after at most 14 months.
