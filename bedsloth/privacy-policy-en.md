@@ -1,7 +1,3 @@
----
-lang: en
----
-
 # BedSloth Privacy Policy
 
 **Last updated: 2026-10-08**
@@ -95,6 +91,7 @@ or health data). This is used to prevent ranking manipulation.
 | Today's exemption record (date, whether it came from a postpone pass or an ad, and for an ad the step count at that moment) | Judging streaks and party streaks |
 | Achievement unlocks (achievement, time unlocked) | Achievements and their rewards |
 | "Not-to-do" quest completions (date, quest) | Calculating fluff rewards |
+| Records of fluff received again by watching an ad (date, amount, ad reward transaction ID, time) | Calculating your fluff balance, preventing double rewards |
 | Decoration purchases (item, fluff spent, time) | Decoration feature, fluff balance |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
 
@@ -177,6 +174,11 @@ Messaging tokens.
   code** is passed to Google (AdMob); your step count and account identifier are not sent
   to Google. To prevent double rewards, the server stores the verification record (ad
   reward transaction ID, date, step count, result, time).
+- **Watching an ad to receive fluff again (rewarded ads):** you can watch an ad to receive
+  the previous day's "Not-to-do" fluff one more time. Here too the app leaves the target
+  date **directly on our server** and receives a random verification code, and **only this
+  code** is passed to Google (AdMob). Your step count is not used for this feature. The
+  server stores the record (date, amount, ad reward transaction ID, time).
 
 ### 3.7 Friends, blocking, "Tuck in" blankets, blanket parties and invites
 
@@ -192,6 +194,13 @@ tucked them in with a blanket today.** If your steps came from a source we canno
 **"Tuck in" blankets:** you can send each friend one blanket per day. We store the
 sender, recipient, date and time, and when the recipient saw it. The recipient sees the
 sender's nickname.
+
+**Rescuing with a postpone pass:** you can use one of your own postpone passes to rescue a
+friend or a member of your party who went over their step limit that day. We store who
+rescued whom, the date concerned, the time, and when the rescued person saw it, and that
+day is recorded as exempt for the rescued person. The rescuer's nickname is shown on the
+rescued person's screen. If the rescuer deletes their account, only the rescuer is removed
+from that record.
 
 **Removing and blocking:** you can remove or block a friend at any time. Doing so deletes
 the friendship and any unseen blankets between you; blocking also deletes pending party
@@ -308,7 +317,7 @@ Coupang or Amazon.
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
 - When you delete your account, your step records, nickname, limits, streaks and
-  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets,
+  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
   party membership and invitations, invite code, reports you made or received, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
