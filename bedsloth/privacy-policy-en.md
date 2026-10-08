@@ -4,8 +4,8 @@ lang: en
 
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-05**
-**Effective date: 2026-10-05**
+**Last updated: 2026-10-08**
+**Effective date: 2026-10-08**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -129,7 +129,7 @@ your device.
   account identifier** is sent to RevenueCat and linked to your purchase history so we
   can check purchase and subscription status. For Streak Savers and postpone passes, RevenueCat notifies
   our server after payment, and the server records that notification (event ID,
-  product, account identifier, time) to prevent double delivery. **The app never
+  product, account identifier, time) to prevent double delivery. For Premium, the server stores **when your subscription is valid until and when you last received the weekly skip pass**, so it can give subscribers one skip pass every week. **The app never
   receives or stores card numbers or other payment details**; Google/Apple process
   payments directly.
 - **Access logs** — When the app communicates with our server, access records such as
@@ -308,7 +308,7 @@ Coupang or Amazon.
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
 - When you delete your account, your step records, nickname, limits, streaks and
-  badges, achievements, Streak Savers, postpone passes and exemption records, quests and fluff, decorations, friends / blocks / blankets,
+  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets,
   party membership and invitations, invite code, reports you made or received, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
