@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-05**
+**Last updated: 2026-10-11**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -54,6 +54,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Quest completions and fluff, decoration purchases and equipped decorations
 - Friendships, block records, and blankets sent and received
 - Blanket party membership and party invitations sent and received
+- Messages you wrote in party chat, your read position, and any chat restriction record
 - Your invite code
 - Reports you made and reports about you
 - Ranking information

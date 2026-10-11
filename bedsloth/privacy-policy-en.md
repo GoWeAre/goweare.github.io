@@ -1,7 +1,7 @@
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-08**
-**Effective date: 2026-10-08**
+**Last updated: 2026-10-12**
+**Effective date: 2026-10-12**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -54,13 +54,14 @@ link yourself in iOS **Settings > Apple ID > Sign-In & Security > Sign in with A
 
 | Item | Purpose | Visible to other users? |
 |---|---|---|
-| Nickname | Shown in the ranking, to friends and in parties | Yes — ranking (top 100), friends, party members, people you invite to a party |
+| Nickname | Shown in the ranking, to friends and in parties | Yes — ranking (top 100), friends, party members, people you invite to a party, people you tuck in (including neighbors shown in the ranking) |
 | Daily step limit | Threshold for "limit exceeded" notifications. Each day's limit is stored on the server with that day's steps | Yes — friends and party members |
 
 You start with an automatic nickname ("침대늘보", Korean for "BedSloth", followed by the
 first 6 characters of your random account identifier) and can change it in Settings
 (1–20 characters). Your nickname is **visible to other users**, so please don't use
 your real name, contact details or anything that could identify you.
+Nicknames containing words on the operator's blocklist (such as slurs) are not saved.
 
 The character (avatar) currently uses the same default for every user and cannot be
 changed. This default is shown in the ranking.
@@ -92,8 +93,9 @@ or health data). This is used to prevent ranking manipulation.
 | Achievement unlocks (achievement, time unlocked) | Achievements and their rewards |
 | "Not-to-do" quest completions (date, quest) | Calculating fluff rewards |
 | Records of fluff received again by watching an ad (date, amount, ad reward transaction ID, time) | Calculating your fluff balance, preventing double rewards |
-| Decoration purchases (item, fluff spent, time) | Decoration feature, fluff balance |
+| Decoration purchases (item, fluff spent, time), including party chat phrase packs you get | Decoration feature, checking which phrase packs you can use in party chat, fluff balance |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
+| Push token, app language, time zone, whether to receive party chat notifications (if friend updates are on) | Delivering friend update and party chat notifications |
 
 Your fluff (in-app points) balance is not stored; it is calculated from these records
 and invite reward records. Fluff cannot be exchanged for money and is unrelated to
@@ -103,7 +105,7 @@ payments.
 
 Your weekday step limits, the last date you opened the app (for reminders to users who
 haven't opened it for a while), notification history, whether the app has
-asked you for a rating, which "Not-to-do" settlements you have seen, and today's steps for the home-screen widget are stored **only on your device**
+asked you for a rating, which "Not-to-do" settlements you have seen, how many times you have sent each party chat quick phrase, and today's steps for the home-screen widget are stored **only on your device**
 and are not sent to our server. They are excluded from cloud backup and device transfer
 and are deleted when you uninstall the app. If you add the Android home-screen widget,
 today's steps and limit appear on your home screen and may be seen by anyone who can see
@@ -134,9 +136,21 @@ your device.
   are used only for security and troubleshooting and are deleted automatically after
   **7 days**.
 
-**We do not use a push server.** All notifications are local notifications created
-on your device; we do not collect remote push tokens such as Firebase Cloud
-Messaging tokens.
+- **Friend update notifications (Firebase Cloud Messaging)** — To let you know when a friend
+  tucks you in, saves your day with a skip pass, invites you to a blanket party, or talks to you in party chat, we store
+  **your device's push token, app language, time zone, and whether to receive party chat notifications** on our server. Notifications are
+  delivered through Google (Firebase Cloud Messaging) and, on iOS, Apple (APNs). The
+  notification text contains only **the sender's nickname** (no step counts or account
+  identifiers). If you turn off "Friend updates" in Settings or turn off the device
+  notification permission, the token is removed from our server the next time you open the
+  app; it is deleted when you delete your account, and automatically after 90 days without
+  opening the app.
+  Party chat notifications also **carry no message content** — only the sender's nickname — and are sent
+  once until you read the chat (at most once a day). They are not sent between 11 p.m. and 8 a.m. You can
+  turn them off separately with "Party chat" in settings.
+
+Step limit alerts, quest reminders, report alerts, and come-back check-ins are **local
+notifications created on your device** and do not go through a server.
 
 ### 3.5 Special notice on health data (Health Connect / HealthKit)
 
@@ -194,6 +208,9 @@ tucked them in with a blanket today.** If your steps came from a source we canno
 **"Tuck in" blankets:** you can send each friend one blanket per day. We store the
 sender, recipient, date and time, and when the recipient saw it. The recipient sees the
 sender's nickname.
+You can also tuck in up to 3 neighbors a day — people shown in the ranking who are not your friends — and
+the recipient sees your nickname on their screen and in the notification. If you do not want this, you can
+block or report that person.
 
 **Rescuing with a postpone pass:** you can use one of your own postpone passes to rescue a
 friend or a member of your party who went over their step limit that day. We store who
@@ -208,7 +225,7 @@ invitations between you. A block record (who blocked whom) is kept until account
 so the two accounts cannot become friends again; the other person is not notified.
 People you block are hidden from your ranking screen, and only you can see your block
 list. If you are in the same blanket party, you remain visible to each other in the party
-until one of you leaves.
+until one of you leaves. In party chat, however, you and a person you blocked do not see each other's messages.
 
 To prevent code guessing, we count failed code entries and code regenerations **per day
 only** and delete older counts.
@@ -225,6 +242,19 @@ leave at any time. A party is deleted when its last member leaves.
 and time. The invitee sees the inviter's nickname and the party's member count.
 Invitations cannot be accepted after 7 days and are deleted once accepted or declined.
 
+**Party chat:** Members of the same blanket party can exchange messages. When you send a message you
+wrote (up to 200 characters) or a quick phrase prepared by the app, the server stores **the message
+content, the sender, and the time sent**, how far each member has read, and the time a party chat notification was last sent to them (so it is not sent repeatedly). Messages are visible only
+to members of the same party, and a member who joins later sees only messages sent after joining.
+Messages are **deleted automatically after 7 days**, and your messages are deleted immediately when you
+leave the party or delete your account. You can delete your own messages at any time. Messages
+containing words on the operator's blocklist are not saved, and violating the rules may suspend your
+ability to send messages for a period (the server stores that end date). Whether you agreed to the
+promise shown the first time you open the chat is stored only on your device. How many times you have
+sent each quick phrase is stored only on your device, to show the ones you use most first, and is not sent
+to our server. Usage statistics record only that the chat was opened and that a message was sent (typed or
+quick phrase, and for a quick phrase which pack it came from), never which phrase or its content.
+
 **Invite rewards:** within 7 days of your account being created, you can enter another
 user's invite code once; both of you receive fluff (in-app points with no cash value).
 To prevent double rewards and abuse, we store who entered whose code, when, and whether
@@ -233,7 +263,8 @@ the reward was given. The code owner only sees **how many people** used their co
 ### 3.8 Reports
 
 If you see an inappropriate nickname or spam (for example in the ranking), you can report
-that user. Reports are used to handle inappropriate nicknames and spam in line with the
+that user; if you find an inappropriate message in party chat, you can report that message.
+Reports are used to handle inappropriate nicknames, messages and spam in line with the
 user-generated content policies of the app stores (App Store and Google Play).
 
 - **What we store:** the reporter, the reported user, the reason (nickname / spam /
@@ -247,6 +278,16 @@ user-generated content policies of the app stores (App Store and Google Play).
   handled by the operator.
 - **Retention:** if either the reporter or the reported user deletes their account, the
   related report records are deleted with it.
+- **Stored for a message report:** the reporter, the author, the reason (insults or harassment /
+  sexual content / spam / other), **the message content at the time of the report**, the time of the
+  report, and the time it was handled. The content kept in the report remains for handling even after
+  the original message is deleted.
+- **Automatic action on messages:** a reported message disappears from the reporter's screen right
+  away, and when 2 different people report the same message it is deleted for all members. There is a
+  daily limit on reports.
+- **Operator alert:** the operator is alerted when a report is filed. The alert contains only the
+  report number, the reason and whether the message was automatically deleted — no message content,
+  nickname, or account identifier.
 
 ## 4. Permissions
 
@@ -270,12 +311,12 @@ following companies to the extent needed to run the service.
 
 | Processor | Task | Privacy policy |
 |---|---|---|
-| Supabase Inc. | Storing accounts and step records, ranking, storing friend / party / decoration / achievement / exemption / report records | https://supabase.com/privacy |
-| Google LLC (Firebase Crashlytics / Analytics) | Crash reports, usage statistics | https://policies.google.com/privacy |
+| Supabase Inc. | Storing accounts and step records, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records | https://supabase.com/privacy |
+| Google LLC (Firebase Crashlytics / Analytics / Cloud Messaging) | Crash reports, usage statistics, delivering friend update notifications | https://policies.google.com/privacy |
 | Google LLC (AdMob, UMP consent message) | Serving ads, verifying rewarded ad views, managing ad consent | https://policies.google.com/technologies/ads |
 | RevenueCat, Inc. | Managing in-app purchase and subscription status | https://www.revenuecat.com/privacy |
 | Google LLC (Sign-in) | Google account linking (only if you choose it) | https://policies.google.com/privacy |
-| Apple Inc. (Sign in with Apple) | Apple account linking and token revocation on account deletion (only if you choose it) | https://www.apple.com/legal/privacy/ |
+| Apple Inc. (Sign in with Apple, APNs) | Apple account linking and token revocation on account deletion (only if you choose it), delivering friend update notifications on iOS | https://www.apple.com/legal/privacy/ |
 
 ### 5.1 International transfers
 
@@ -284,10 +325,10 @@ applicable laws, we disclose the following.
 
 | Recipient | Country | Items | When and how | Retention |
 |---|---|---|---|---|
-| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits, friend / party / decoration / achievement / exemption / report records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
-| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch an ad to postpone today) a random verification code | Whenever you use the app, encrypted | Per each company's policy |
+| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
+| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch an ad to postpone today) a random verification code, (if friend updates are on) push token and notification text (the sender's nickname) | Whenever you use the app, encrypted | Per each company's policy |
 | RevenueCat, Inc. | United States | Account identifier, purchase and subscription status | When you make a purchase, encrypted | Per each company's policy |
-| Apple Inc. (Sign in with Apple) | United States | (if linked) sign-in requests, token revocation request on account deletion | When you link or delete, encrypted | Per each company's policy |
+| Apple Inc. (Sign in with Apple, APNs) | United States | (if linked) sign-in requests, token revocation request on account deletion, (if friend updates are on, on iOS) push token and notification text (the sender's nickname) | When you link or delete, and when a notification is delivered, encrypted | Per each company's policy |
 
 If you do not want your data transferred abroad, you can stop using the app and delete
 your account. In that case you will not be able to use the service.
@@ -318,7 +359,7 @@ Coupang or Amazon.
   account.**
 - When you delete your account, your step records, nickname, limits, streaks and
   badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
-  party membership and invitations, invite code, reports you made or received, and your
+  party membership and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
   [Account deletion](account-deletion-en.md)).
@@ -341,6 +382,9 @@ Coupang or Amazon.
   - Purchase records held by Google / Apple / RevenueCat follow their own policies.
 - Crash reports (Firebase Crashlytics) are deleted automatically after 90 days, and user-level usage
   statistics (Firebase Analytics) after at most 14 months.
+- The push token, app language, time zone, and party chat notification setting are kept until you turn off "Friend updates" or delete your
+  account, or for 90 days after you last opened the app.
+- Party chat messages are deleted automatically **7 days after they are sent**.
 
 ## 8. Your rights
 
