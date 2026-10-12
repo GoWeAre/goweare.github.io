@@ -237,6 +237,12 @@ decorations**; the party streak (consecutive days everyone stayed under their li
 calculated from these records when needed and is not stored separately. Accepting an
 invitation and joining a party is your agreement to share this with the party; you can
 leave at any time. A party is deleted when its last member leaves.
+The party's host can remove other members. When a member is removed, the party chat messages
+they wrote are deleted, just as when they leave on their own, and we keep the fact that they
+were removed (the time only; we do not store who removed them) so the app can tell them once.
+This record is deleted as soon as it is shown or the person joins a party again; otherwise it is
+no longer shown after 7 days and is deleted within a day after that. If the host has no step records for more than 30 days, the
+host role passes to the next member.
 
 **Party invitations:** when you invite a friend to a party, we store the inviter, invitee
 and time. The invitee sees the inviter's nickname and the party's member count.
