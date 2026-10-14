@@ -56,6 +56,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Blanket party membership and party invitations sent and received
 - Messages you wrote in party chat, your read position, and any chat restriction record
 - Your invite code
+- Device upload keys used for background step uploads
 - Reports you made and reports about you
 - Ranking information
 

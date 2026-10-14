@@ -1,7 +1,7 @@
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-12**
-**Effective date: 2026-10-12**
+**Last updated: 2026-10-14**
+**Effective date: 2026-10-14**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -82,6 +82,10 @@ location (the app does not even request location permission).
 
 Along with each step total we store **which source it came from** (device sensor
 or health data). This is used to prevent ranking manipulation.
+
+**Background upload:** Even if you do not open the app, whenever the app checks your steps in the background (roughly every 1–2 hours on Android; at the operating system's discretion on iOS), it periodically sends today's step total, its source and that day's step limit to our server. The kinds of data are the same as when you open the app; only the timing differs. For this, each device creates an **upload key** (a random value) that is kept on the device, and our server stores **only a hash** of it, not the key itself. The upload key is used only to upload step counts, each user can have up to 5, and they are deleted together with your account.
+
+**Filling missed days:** When you open the app, it re-reads up to the last 6 days of step counts from your health data (Health Connect / HealthKit) to fill in daily totals missing on the server. Only daily totals are sent. When the app shows hourly step counts (the hourly chart in the blanket journal), it reads your health data on the device only and does not send it to our server.
 
 ### 3.3 App usage records
 
@@ -365,7 +369,7 @@ Coupang or Amazon.
   account.**
 - When you delete your account, your step records, nickname, limits, streaks and
   badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
-  party membership and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, and your
+  party membership and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
   [Account deletion](account-deletion-en.md)).
