@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-11**
+**Last updated: 2026-10-14**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -54,7 +54,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Streaks, badges and achievements, Streak Savers and postpone passes owned/used, and exemption records
 - Quest completions and fluff, decoration purchases and equipped decorations
 - Friendships, block records, and blankets sent and received
-- Blanket party membership and party invitations sent and received
+- Blanket party membership (including records of parties you left) and party invitations sent and received
 - Messages you wrote in party chat, your read position, and any chat restriction record
 - Your invite code
 - Device upload keys used for background step uploads

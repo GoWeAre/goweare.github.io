@@ -243,6 +243,11 @@ decorations**; the party streak (consecutive days everyone stayed under their li
 calculated from these records when needed and is not stored separately. Accepting an
 invitation and joining a party is your agreement to share this with the party; you can
 leave at any time. A party is deleted when its last member leaves.
+When a member leaves or is removed, we keep **their membership period (the days they joined and left),
+how they left (on their own or removed), and their step count and step limit on the day they left** with that
+party, so the days they were a member still count toward the party streak. This record is not shown to other
+members, is used only to calculate the party streak, and is deleted 92 days after the day they left or when the
+party no longer exists.
 The party's host can remove other members. When a member is removed, the party chat messages
 they wrote are deleted, just as when they leave on their own, and we keep the fact that they
 were removed (the time only; we do not store who removed them) so the app can tell them once.
@@ -375,7 +380,7 @@ Coupang or Amazon.
   account.**
 - When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
   badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
-  party membership and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
+  party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
   [Account deletion](account-deletion-en.md)).
@@ -401,6 +406,9 @@ Coupang or Amazon.
 - The push token, app language, time zone, and party chat notification setting are kept until you turn off "Friend updates" or delete your
   account, or for 90 days after you last opened the app.
 - Party chat messages are deleted automatically **7 days after they are sent**.
+- Records of members who left or were removed from a party (membership period, how they left, and their step count and
+  step limit on the day they left) are deleted automatically **92 days after the day they left** (earlier if the account
+  is deleted or the party no longer exists).
 - Limit adjustment records are deleted automatically after **30 days**, and abnormal-use flags after **90 days** (earlier if you delete your account).
 
 ## 8. Your rights
