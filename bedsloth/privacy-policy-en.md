@@ -85,6 +85,8 @@ or health data). This is used to prevent ranking manipulation.
 
 **Background upload:** Even if you do not open the app, whenever the app checks your steps in the background (roughly every 1–2 hours on Android; at the operating system's discretion on iOS), it periodically sends today's step total, its source and that day's step limit to our server. The kinds of data are the same as when you open the app; only the timing differs. For this, each device creates an **upload key** (a random value) that is kept on the device, and our server stores **only a hash** of it, not the key itself. The upload key is used only to upload step counts, each user can have up to 5, and they are deleted together with your account.
 
+**Weekday limits stored on the server:** The step limit you set for each weekday is also stored on our server. This lets the server trim the limit attached to each day's step record so it never exceeds your own setting, so that success and failure are judged fairly by the same standard, and it is also used to restore your limits when you reinstall the app or continue on another device. We keep only a small per-day count of how many times the server trimmed a limit, for **30 days**. This information is deleted together with your account.
+
 **Filling missed days:** When you open the app, it re-reads up to the last 6 days of step counts from your health data (Health Connect / HealthKit) to fill in daily totals missing on the server. Only daily totals are sent. When the app shows hourly step counts (the hourly chart in the blanket journal), it reads your health data on the device only and does not send it to our server.
 
 ### 3.3 App usage records
@@ -299,6 +301,10 @@ user-generated content policies of the app stores (App Store and Google Play).
   report number, the reason and whether the message was automatically deleted — no message content,
   nickname, or account identifier.
 
+### 3.9 Detection of abnormal use
+
+To keep rankings and streaks fair and to prevent record manipulation, once a day our server analyzes step records to find abnormal usage patterns (for example, 15 or more consecutive days with zero steps, many past days filled in at once with near-zero step counts, or repeated trimming of limits) and records internal flags. Only step records are analyzed, and these flags are kept for **90 days** and deleted together with your account. When flags appear, the operator is notified, but the notification contains **only the number of flags per kind** — no nickname, account identifier or step count. No automatic sanction is applied based on a flag alone; a person reviews it first.
+
 ## 4. Permissions
 
 | Permission | Why we need it | If you deny it |
@@ -321,7 +327,7 @@ following companies to the extent needed to run the service.
 
 | Processor | Task | Privacy policy |
 |---|---|---|
-| Supabase Inc. | Storing accounts and step records, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records | https://supabase.com/privacy |
+| Supabase Inc. | Storing accounts, step records, weekday limits and abnormal-use flags, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records | https://supabase.com/privacy |
 | Google LLC (Firebase Crashlytics / Analytics / Cloud Messaging) | Crash reports, usage statistics, delivering friend update notifications | https://policies.google.com/privacy |
 | Google LLC (AdMob, UMP consent message) | Serving ads, verifying rewarded ad views, managing ad consent | https://policies.google.com/technologies/ads |
 | RevenueCat, Inc. | Managing in-app purchase and subscription status | https://www.revenuecat.com/privacy |
@@ -335,7 +341,7 @@ applicable laws, we disclose the following.
 
 | Recipient | Country | Items | When and how | Retention |
 |---|---|---|---|---|
-| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
+| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits (including weekday limits), abnormal-use flags, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
 | Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch an ad to postpone today) a random verification code, (if friend updates are on) push token and notification text (the sender's nickname) | Whenever you use the app, encrypted | Per each company's policy |
 | RevenueCat, Inc. | United States | Account identifier, purchase and subscription status | When you make a purchase, encrypted | Per each company's policy |
 | Apple Inc. (Sign in with Apple, APNs) | United States | (if linked) sign-in requests, token revocation request on account deletion, (if friend updates are on, on iOS) push token and notification text (the sender's nickname) | When you link or delete, and when a notification is delivered, encrypted | Per each company's policy |
@@ -367,7 +373,7 @@ Coupang or Amazon.
 
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
-- When you delete your account, your step records, nickname, limits, streaks and
+- When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
   badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
   party membership and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
   linked Google / Apple account information and Apple refresh token are
@@ -395,6 +401,7 @@ Coupang or Amazon.
 - The push token, app language, time zone, and party chat notification setting are kept until you turn off "Friend updates" or delete your
   account, or for 90 days after you last opened the app.
 - Party chat messages are deleted automatically **7 days after they are sent**.
+- Limit adjustment records are deleted automatically after **30 days**, and abnormal-use flags after **90 days** (earlier if you delete your account).
 
 ## 8. Your rights
 

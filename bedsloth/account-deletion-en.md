@@ -48,7 +48,8 @@ Deleting your account **immediately and permanently** deletes the following from
 (except the remaining records listed in section 4):
 
 - Your anonymous account identifier and (if linked) the Google / Apple account link, including the email address
-- Nickname, character (avatar) and daily step limits
+- Nickname, character (avatar), daily step limits, weekday limit settings and limit adjustment records
+- Abnormal-use flags
 - Daily step totals and their source (device sensor / health data)
 - Streaks, badges and achievements, Streak Savers and postpone passes owned/used, and exemption records
 - Quest completions and fluff, decoration purchases and equipped decorations
