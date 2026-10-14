@@ -1,7 +1,7 @@
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-14**
-**Effective date: 2026-10-14**
+**Last updated: 2026-10-15**
+**Effective date: 2026-10-15**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -248,6 +248,9 @@ how they left (on their own or removed), and their step count and step limit on 
 party, so the days they were a member still count toward the party streak. This record is not shown to other
 members, is used only to calculate the party streak, and is deleted 92 days after the day they left or when the
 party no longer exists.
+When a member deletes their account, the party keeps only **anonymous per-day success/failure marks** (with no identifier)
+for up to 92 days so the party record stays fair, and the remaining members see a one-time notice that does not say who left
+(the notice record is deleted once shown or after 7 days).
 The party's host can remove other members. When a member is removed, the party chat messages
 they wrote are deleted, just as when they leave on their own, and we keep the fact that they
 were removed (the time only; we do not store who removed them) so the app can tell them once.
@@ -389,7 +392,8 @@ Coupang or Amazon.
     received and the invite reward limit still works, but your deleted account's
     identifier is removed so the record no longer shows whose it was.
   - **Blanket parties:** if other members remain in a party you created, the party
-    continues for them and only the "created by" information is removed.
+    continues for them and only the "created by" information is removed. If you were a party member, that party keeps
+    only anonymous per-day success/failure marks (with no identifier) for up to 92 days (see §3.7).
   - **Payment records:** in-app payment notification records (event ID, product, the
     account identifier string at the time, time) are kept for **5 years** as records of
     payment and supply of goods under Korea's Act on the Consumer Protection in

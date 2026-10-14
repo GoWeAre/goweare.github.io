@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-14**
+**Last updated: 2026-10-15**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -69,7 +69,9 @@ Deletion cannot be undone.
   the invite reward limit still works, but your deleted account's identifier is removed so the
   record no longer shows whose it was.
 - **Blanket parties:** if other members remain in a party you created, the party continues for
-  them and only the "created by" information is removed.
+  them and only the "created by" information is removed. If you were a party member, the party keeps only anonymous
+  per-day success/failure marks (with no identifier) for up to 92 days so its record stays fair, and the remaining
+  members get a one-time notice that does not say who left.
 - **Payment records (BedSloth server):** in-app payment notification records (event ID, product,
   the account identifier string at the time, time) are kept for **5 years** as records of payment
   and supply of goods under Korea's Act on the Consumer Protection in Electronic Commerce, and
