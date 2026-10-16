@@ -2,7 +2,7 @@
 
 **Go We Are** ("we") provides the mobile game **Pore Salon Simulator** (the "Game").
 
-**Effective date:** 2026-10-11
+**Effective date:** 2026-10-16
 
 ## 1. Information we collect and why
 
@@ -66,6 +66,7 @@ The Game **contains ads**: an occasional interstitial ad when moving to the next
 - How Google uses data: Google Privacy Policy <https://policies.google.com/privacy>, How Google uses information from sites or apps that use its services <https://policies.google.com/technologies/partner-sites>
 - To limit personalised ads: on Android you can reset or delete your advertising ID in device settings (Google → Ads). On iOS the app asks once for App Tracking Transparency (ATT) permission before ads are first prepared. If you decline, the game and ads continue without the IDFA (less personalised ads); you can change this any time in Settings → Privacy & Security → Tracking. Menu names may differ by OS version.
 - Where consent is required (e.g. the EEA and UK), Google's consent form (UMP) is shown before ads are requested, and ads are requested only as your consent allows. You can change your choice any time under Settings → "Privacy options".
+- If you are in a US state that gives you the right to opt out of the "sale" or "sharing" of personal information (such as California), you can opt out of selling or sharing your information for targeted advertising under Settings → "Privacy options". This button appears only where such a choice is required. See also section 7.
 
 **Inside the Toss app (Apps in Toss): Toss ads**
 
@@ -111,6 +112,7 @@ The Game is not primarily directed to children and does not ask for names, conta
 - If you signed in, you can delete your account, backed-up progress and ranking records yourself in Settings → Back up progress → Delete account (1-e).
 - If you did not sign in, ranking records on our server (1-b) cannot be viewed or deleted in the Game; contact us below. Tell us your nickname (#NNNN) and roughly your score and date, and we will delete the records we can identify.
 - For advertising identifier choices, see section 2.
+- **US state privacy rights (California and others)**: we do not sell your information for money. However, Google (AdMob) collecting advertising identifiers, IP address and ad interactions (section 2) for targeted ads in the Android/iOS app may count as a "sale" or "sharing" of personal information under some state laws. You can opt out under Settings → "Privacy options", and you can request access to or deletion of your data in the ways above or via the contact in section 8. We will not discriminate against you for exercising these rights. We do not collect sensitive personal information, and we do not knowingly sell or share the information of users under 16.
 
 ## 8. Contact
 
