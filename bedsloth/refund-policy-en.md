@@ -1,7 +1,7 @@
 # BedSloth — Paid features and refunds
 
-**Last updated: 2026-10-09**
-**Effective date: 2026-10-09**
+**Last updated: 2026-10-17**
+**Effective date: 2026-10-17**
 
 ---
 
@@ -14,12 +14,15 @@ handle payment and refunds; this page explains what we sell and how refunds work
 
 | Item | Type | What you get |
 |---|---|---|
-| Skip Today Pass | One-time purchase, used up when redeemed | One pass. Redeeming it waives that day's step limit. You can hold up to 5. |
+| Skip Today Pass | One-time purchase, used up when redeemed | One pass. Redeeming it waives that day's step limit. You can hold up to 5. Bought from the fail alert, it is used for that day right away; bought in the shop, it goes into your wallet to use when you like. |
 | Streak Saver | One-time purchase, used up when redeemed | One saver. Keeps your streak from breaking on a failed day. |
+| Fluff packs (100, 350 or 800) | One-time purchase, used up when spent | That amount of fluff (in-app points), which you can spend on decor. |
+| Nickname Pass | One-time purchase, used up when redeemed | One pass. Changes your nickname once. You can hold up to 5. Your first change after sign-up is free without a pass, and you can also get a pass by collecting 10 pieces from watching ads. |
 | BedSloth Premium | Auto-renewing subscription (1 month or 1 year) | No full-screen ads after fail alerts, one skip pass every week, and Premium-only decor you can get with fluff |
 
 Prices are shown on the purchase buttons in your local currency, as set by the store.
-Fluff (in-app points) and decor obtained with fluff are not paid items and have no cash value.
+Fluff (in-app points) can be earned through quests and similar features or bought as fluff packs above.
+Fluff and decor obtained with fluff cannot be exchanged for money.
 
 ## 2. Subscription renewal and cancellation
 
@@ -38,6 +41,11 @@ Fluff (in-app points) and decor obtained with fluff are not paid items and have 
   full refund within 7 days of buying.
 - **Passes and savers you have already used:** they take effect the moment you use them and
   cannot be undone, so the purchase can no longer be withdrawn.
+- **Fluff packs:** you may withdraw from the purchase and get a full refund within 7 days of buying. However,
+  if you have already used the purchased fluff to get decor, that decor takes effect right away and cannot be
+  undone, so withdrawal is limited for the part you spent.
+- **Nickname Passes:** unused passes can be withdrawn for a full refund within 7 days of buying. A pass
+  you have already used changed your nickname right away and cannot be undone, so it can no longer be withdrawn.
 - **Subscription:** within 7 days of payment you may withdraw if you have not used the benefits
   that came with it (the weekly skip pass, Premium-only decor). After that, the store's refund
   policy applies.
@@ -62,12 +70,19 @@ Refunds are processed by the store you paid through.
 
 - Refunded passes and savers are removed from your wallet. If you already used them, the next
   one you buy of the same item is deducted first (the app tells you near the purchase button).
+- If a fluff pack is refunded, that amount of fluff is taken back. If you already spent it, your fluff balance
+  can go below zero, and while it is below zero you cannot get decor with fluff. Decor you already got is not
+  taken back, and once you earn enough fluff (for example from quests) to bring your balance back to zero or
+  above, you can get decor again.
+- If a Nickname Pass is refunded, it is removed from your wallet. If you already used it, the next pass
+  you buy is deducted first, and the nickname you changed with it is not reverted.
 - If a subscription is refunded, Premium ends at that point. We do not take back the weekly skip
   passes you received or the Premium-only decor you got before then.
 
 ## 6. Deleting your account
 
-Deleting your account also deletes any remaining passes, savers and decor; they cannot be
+Deleting your account also deletes any remaining passes, savers, fluff (including purchased fluff), decor and
+Nickname Passes; they cannot be
 restored or refunded afterwards. A subscription is separate from your account, so cancel it in
 the store as well.
 

@@ -1,7 +1,7 @@
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-15**
-**Effective date: 2026-10-15**
+**Last updated: 2026-10-17**
+**Effective date: 2026-10-17**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -59,7 +59,8 @@ link yourself in iOS **Settings > Apple ID > Sign-In & Security > Sign in with A
 
 You start with an automatic nickname ("침대늘보", Korean for "BedSloth", followed by the
 first 6 characters of your random account identifier) and can change it in Settings
-(1–20 characters). Your nickname is **visible to other users**, so please don't use
+(1–20 characters). Your first change after sign-up is free; after that, each change needs one
+**Nickname Pass** (see §3.3). Your nickname is **visible to other users**, so please don't use
 your real name, contact details or anything that could identify you.
 Nicknames containing words on the operator's blocklist (such as slurs) are not saved.
 
@@ -100,12 +101,17 @@ or health data). This is used to prevent ranking manipulation.
 | "Not-to-do" quest completions (date, quest) | Calculating fluff rewards |
 | Records of fluff received again by watching an ad (date, amount, ad reward transaction ID, time) | Calculating your fluff balance, preventing double rewards |
 | Decoration purchases (item, fluff spent, time), including party chat phrase packs you get | Decoration feature, checking which phrase packs you can use in party chat, fluff balance |
+| Fluff purchase records (payment notification event ID, store transaction ID, product, amount of fluff, time, and the time it was taken back if refunded) | Delivering purchased fluff, calculating your fluff balance, preventing double delivery, taking fluff back on refund |
+| Nickname wallet (number of Nickname Passes held (up to 5), number of passes refunded after being used, pieces collected, whether the one free change has been used) | Nickname change feature, taking passes back on refund |
+| Records of Nickname Pass pieces received by watching an ad (ad reward transaction ID, date, time) | Giving pieces (up to 5 a day), preventing double rewards |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
 | Push token, app language, time zone, whether to receive party chat notifications (if friend updates are on) | Delivering friend update and party chat notifications |
 
 Your fluff (in-app points) balance is not stored; it is calculated from these records
-and invite reward records. Fluff cannot be exchanged for money and is unrelated to
-payments.
+(including fluff purchase records) and invite reward records. Fluff can also be bought
+with an in-app purchase (see §3.4), but it cannot be exchanged for money. If purchased fluff
+is refunded, that amount is removed from your balance; if you have already spent it, your
+balance can go below zero.
 
 #### Information stored only on your device
 
@@ -133,8 +139,10 @@ your device.
 - **Purchase records (RevenueCat)** — If you make an in-app purchase, **your app
   account identifier** is sent to RevenueCat and linked to your purchase history so we
   can check purchase and subscription status. For Streak Savers and postpone passes, RevenueCat notifies
-  our server after payment, and the server records that notification (event ID,
-  product, account identifier, time) to prevent double delivery. For Premium, the server stores **when your subscription is valid until and when you last received the weekly skip pass**, so it can give subscribers one skip pass every week. **The app never
+  our server after payment, and the server records that notification (event ID, store transaction ID,
+  product, account identifier, time) to prevent double delivery. Fluff packs and Nickname Passes are
+  delivered the same way, and on a refund the server matches the same transaction ID to take them back (see §3.3
+  for fluff purchase records and the nickname wallet). For Premium, the server stores **when your subscription is valid until and when you last received the weekly skip pass**, so it can give subscribers one skip pass every week. **The app never
   receives or stores card numbers or other payment details**; Google/Apple process
   payments directly.
 - **Access logs** — When the app communicates with our server, access records such as
@@ -199,6 +207,12 @@ notifications created on your device** and do not go through a server.
   date **directly on our server** and receives a random verification code, and **only this
   code** is passed to Google (AdMob). Your step count is not used for this feature. The
   server stores the record (date, amount, ad reward transaction ID, time).
+- **Watching an ad to collect Nickname Pass pieces (rewarded ads):** each ad you watch to the end
+  gives one piece (up to 5 a day), and 10 pieces become one Nickname Pass (you do not collect
+  pieces while you hold a pass). Here too the app leaves the date **directly on our server** and receives a
+  random verification code (the server stores your account, the date and this code), and **only this code** is
+  passed to Google (AdMob). Your step count and account identifier are not sent to Google. The server stores the
+  record (ad reward transaction ID, date, time).
 
 ### 3.7 Friends, blocking, "Tuck in" blankets, blanket parties and invites
 
@@ -276,7 +290,7 @@ to our server. Usage statistics record only that the chat was opened and that a 
 quick phrase, and for a quick phrase which pack it came from), never which phrase or its content.
 
 **Invite rewards:** within 7 days of your account being created, you can enter another
-user's invite code once; both of you receive fluff (in-app points with no cash value).
+user's invite code once; both of you receive fluff (in-app points that cannot be exchanged for money).
 To prevent double rewards and abuse, we store who entered whose code, when, and whether
 the reward was given. The code owner only sees **how many people** used their code.
 
@@ -335,7 +349,7 @@ following companies to the extent needed to run the service.
 
 | Processor | Task | Privacy policy |
 |---|---|---|
-| Supabase Inc. | Storing accounts, step records, weekday limits and abnormal-use flags, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records | https://supabase.com/privacy |
+| Supabase Inc. | Storing accounts, step records, weekday limits and abnormal-use flags, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records, fluff purchase records and nickname wallets | https://supabase.com/privacy |
 | Google LLC (Firebase Crashlytics / Analytics / Cloud Messaging) | Crash reports, usage statistics, delivering friend update notifications | https://policies.google.com/privacy |
 | Google LLC (AdMob, UMP consent message) | Serving ads, verifying rewarded ad views, managing ad consent | https://policies.google.com/technologies/ads |
 | RevenueCat, Inc. | Managing in-app purchase and subscription status | https://www.revenuecat.com/privacy |
@@ -349,8 +363,8 @@ applicable laws, we disclose the following.
 
 | Recipient | Country | Items | When and how | Retention |
 |---|---|---|---|---|
-| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits (including weekday limits), abnormal-use flags, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
-| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch an ad to postpone today) a random verification code, (if friend updates are on) push token and notification text (the sender's nickname) | Whenever you use the app, encrypted | Per each company's policy |
+| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits (including weekday limits), abnormal-use flags, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), fluff purchase records, nickname wallets and piece records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
+| Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch rewarded ads) a random verification code, (if friend updates are on) push token and notification text (the sender's nickname) | Whenever you use the app, encrypted | Per each company's policy |
 | RevenueCat, Inc. | United States | Account identifier, purchase and subscription status | When you make a purchase, encrypted | Per each company's policy |
 | Apple Inc. (Sign in with Apple, APNs) | United States | (if linked) sign-in requests, token revocation request on account deletion, (if friend updates are on, on iOS) push token and notification text (the sender's nickname) | When you link or delete, and when a notification is delivered, encrypted | Per each company's policy |
 
@@ -382,7 +396,7 @@ Coupang or Amazon.
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
 - When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
-  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff, decorations, friends / blocks / blankets, records of being rescued,
+  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff (including fluff purchase records), nickname wallet (passes and pieces) and ad piece records and verification codes, decorations, friends / blocks / blankets, records of being rescued,
   party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
@@ -394,8 +408,8 @@ Coupang or Amazon.
   - **Blanket parties:** if other members remain in a party you created, the party
     continues for them and only the "created by" information is removed. If you were a party member, that party keeps
     only anonymous per-day success/failure marks (with no identifier) for up to 92 days (see §3.7).
-  - **Payment records:** in-app payment notification records (event ID, product, the
-    account identifier string at the time, time) are kept for **5 years** as records of
+  - **Payment records:** in-app payment notification records (event ID, store transaction ID, product, the
+    account identifier string at the time, time, including fluff pack and Nickname Pass payments) are kept for **5 years** as records of
     payment and supply of goods under Korea's Act on the Consumer Protection in
     Electronic Commerce, and then deleted. They are unlinked from your account but the
     account identifier string at the time remains, and they are not used for any purpose
@@ -419,7 +433,7 @@ Coupang or Amazon.
 
 You can do the following at any time:
 
-- **Access and correct** — Change your nickname and step limit directly in the app.
+- **Access and correct** — Change your nickname and step limit directly in the app (after the first free change, a nickname change needs a pass).
 - **Delete** — Deleting your account in the app's Settings erases your records on the
   server (except the remaining records listed in section 7). If you have already removed the app, you can request deletion by
   email as described on the [Account deletion](account-deletion-en.md) page.

@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-15**
+**Last updated: 2026-10-17**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -52,7 +52,8 @@ Deleting your account **immediately and permanently** deletes the following from
 - Abnormal-use flags
 - Daily step totals and their source (device sensor / health data)
 - Streaks, badges and achievements, Streak Savers and postpone passes owned/used, and exemption records
-- Quest completions and fluff, decoration purchases and equipped decorations
+- Quest completions and fluff, fluff purchase records (including purchased fluff), decoration purchases and equipped decorations
+- Nickname wallet (Nickname Passes, pieces, whether the free change was used), records of pieces received from ads and ad verification codes
 - Friendships, block records, and blankets sent and received
 - Blanket party membership (including records of parties you left) and party invitations sent and received
 - Messages you wrote in party chat, your read position, and any chat restriction record
@@ -72,8 +73,8 @@ Deletion cannot be undone.
   them and only the "created by" information is removed. If you were a party member, the party keeps only anonymous
   per-day success/failure marks (with no identifier) for up to 92 days so its record stays fair, and the remaining
   members get a one-time notice that does not say who left.
-- **Payment records (BedSloth server):** in-app payment notification records (event ID, product,
-  the account identifier string at the time, time) are kept for **5 years** as records of payment
+- **Payment records (BedSloth server):** in-app payment notification records (event ID, store transaction ID, product,
+  the account identifier string at the time, time, including fluff pack and Nickname Pass payments) are kept for **5 years** as records of payment
   and supply of goods under Korea's Act on the Consumer Protection in Electronic Commerce, and
   then deleted. They are unlinked from your account, but the account identifier string at the time
   remains.
