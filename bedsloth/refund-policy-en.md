@@ -41,9 +41,10 @@ Fluff and decor obtained with fluff cannot be exchanged for money.
   full refund within 7 days of buying.
 - **Passes and savers you have already used:** they take effect the moment you use them and
   cannot be undone, so the purchase can no longer be withdrawn.
-- **Fluff packs:** you may withdraw from the purchase and get a full refund within 7 days of buying. However,
-  if you have already used the purchased fluff to get decor, that decor takes effect right away and cannot be
-  undone, so withdrawal is limited for the part you spent.
+- **Fluff packs:** you may withdraw from the purchase and get a full refund within 7 days of buying. Refunds
+  are made for a whole pack only, never for part of one, and a refunded pack takes back all the fluff it gave you
+  (see section 5). Decor you get with fluff takes effect right away and cannot be undone, so if you got decor in
+  the meantime, withdrawal may be limited.
 - **Nickname Passes:** unused passes can be withdrawn for a full refund within 7 days of buying. A pass
   you have already used changed your nickname right away and cannot be undone, so it can no longer be withdrawn.
 - **Subscription:** within 7 days of payment you may withdraw if you have not used the benefits
