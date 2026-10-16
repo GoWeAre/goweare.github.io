@@ -60,7 +60,8 @@ link yourself in iOS **Settings > Apple ID > Sign-In & Security > Sign in with A
 You start with an automatic nickname ("침대늘보", Korean for "BedSloth", followed by the
 first 6 characters of your random account identifier) and can change it in Settings
 (1–20 characters). Your first change after sign-up is free; after that, each change needs one
-**Nickname Pass** (see §3.3). Your nickname is **visible to other users**, so please don't use
+**Nickname Pass** (see §3.3). Resetting to your default sign-up nickname in Settings is always free and uses
+no pass, so if you put personal information in your nickname you can remove it this way. Your nickname is **visible to other users**, so please don't use
 your real name, contact details or anything that could identify you.
 Nicknames containing words on the operator's blocklist (such as slurs) are not saved.
 
@@ -433,7 +434,7 @@ Coupang or Amazon.
 
 You can do the following at any time:
 
-- **Access and correct** — Change your nickname and step limit directly in the app (after the first free change, a nickname change needs a pass).
+- **Access and correct** — Change your nickname and step limit directly in the app (after the first free change, a nickname change needs a pass, but resetting to your default nickname is always free).
 - **Delete** — Deleting your account in the app's Settings erases your records on the
   server (except the remaining records listed in section 7). If you have already removed the app, you can request deletion by
   email as described on the [Account deletion](account-deletion-en.md) page.
