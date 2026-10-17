@@ -99,6 +99,8 @@ or health data). This is used to prevent ranking manipulation.
 | Postpone passes / Streak Savers owned and used | Providing features |
 | Today's exemption record (date, whether it came from a postpone pass or an ad, and for an ad the step count at that moment) | Judging streaks and party streaks |
 | Achievement unlocks (achievement, time unlocked) | Achievements and their rewards |
+| Sloth Diary progress (story chapters you finished, time) | New-chapter notices and the diary view in the Sloth Diary (the in-app picture-book story) |
+| Story rewards (chapter, decoration or amount of fluff received, time) | Giving each story reward only once, calculating your fluff balance |
 | "Not-to-do" quest completions (date, quest) | Calculating fluff rewards |
 | Records of fluff received again by watching an ad (date, amount, ad reward transaction ID, time) | Calculating your fluff balance, preventing double rewards |
 | Decoration purchases (item, fluff spent, time), including party chat phrase packs you get | Decoration feature, checking which phrase packs you can use in party chat, fluff balance |
@@ -350,7 +352,7 @@ following companies to the extent needed to run the service.
 
 | Processor | Task | Privacy policy |
 |---|---|---|
-| Supabase Inc. | Storing accounts, step records, weekday limits and abnormal-use flags, ranking, storing friend / party / party chat / decoration / achievement / exemption / report records, fluff purchase records and nickname wallets | https://supabase.com/privacy |
+| Supabase Inc. | Storing accounts, step records, weekday limits and abnormal-use flags, ranking, storing friend / party / party chat / decoration / achievement / Sloth Diary / exemption / report records, fluff purchase records and nickname wallets | https://supabase.com/privacy |
 | Google LLC (Firebase Crashlytics / Analytics / Cloud Messaging) | Crash reports, usage statistics, delivering friend update notifications | https://policies.google.com/privacy |
 | Google LLC (AdMob, UMP consent message) | Serving ads, verifying rewarded ad views, managing ad consent | https://policies.google.com/technologies/ads |
 | RevenueCat, Inc. | Managing in-app purchase and subscription status | https://www.revenuecat.com/privacy |
@@ -364,7 +366,7 @@ applicable laws, we disclose the following.
 
 | Recipient | Country | Items | When and how | Retention |
 |---|---|---|---|---|
-| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits (including weekday limits), abnormal-use flags, friend / party / party chat content / decoration / achievement / exemption / report records (including message content kept in message reports), fluff purchase records, nickname wallets and piece records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
+| Supabase Inc. | South Korea (stored in the Seoul region). The processor is a US company and may access data from the US when needed, e.g. for troubleshooting | Account identifier, nickname, step records, limits (including weekday limits), abnormal-use flags, friend / party / party chat content / decoration / achievement / Sloth Diary / exemption / report records (including message content kept in message reports), fluff purchase records, nickname wallets and piece records, (if linked) Google / Apple account identifier and email, Apple refresh token and related information | Whenever you use the app, over an encrypted network connection | Until account deletion (except as described in section 7) |
 | Google LLC (Firebase, AdMob, Sign-in) | United States | Device information, crash records, usage statistics, advertising ID, (if linked) Google account information, (if you watch rewarded ads) a random verification code, (if friend updates are on) push token and notification text (the sender's nickname) | Whenever you use the app, encrypted | Per each company's policy |
 | RevenueCat, Inc. | United States | Account identifier, purchase and subscription status | When you make a purchase, encrypted | Per each company's policy |
 | Apple Inc. (Sign in with Apple, APNs) | United States | (if linked) sign-in requests, token revocation request on account deletion, (if friend updates are on, on iOS) push token and notification text (the sender's nickname) | When you link or delete, and when a notification is delivered, encrypted | Per each company's policy |
@@ -397,7 +399,7 @@ Coupang or Amazon.
 - Step records, nickname, streaks and similar data are kept **until you delete your
   account.**
 - When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
-  badges, achievements, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff (including fluff purchase records), nickname wallet (passes and pieces) and ad piece records and verification codes, decorations, friends / blocks / blankets, records of being rescued,
+  badges, achievements, Sloth Diary progress and story rewards, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff (including fluff purchase records), nickname wallet (passes and pieces) and ad piece records and verification codes, decorations, friends / blocks / blankets, records of being rescued,
   party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
