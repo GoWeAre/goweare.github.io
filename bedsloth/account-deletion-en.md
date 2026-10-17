@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-17**
+**Last updated: 2026-10-18**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -52,7 +52,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Abnormal-use flags
 - Daily step totals and their source (device sensor / health data)
 - Streaks, badges and achievements, Streak Savers and postpone passes owned/used, and exemption records
-- Quest completions and fluff, fluff purchase records (including purchased fluff), decoration purchases and equipped decorations, Sloth Diary progress and story rewards
+- Quest completions and fluff, fluff purchase records (including purchased fluff), decoration purchases and equipped decorations, Sloth Diary progress and story rewards, story bonus and decoration try-on records from ads
 - Nickname wallet (Nickname Passes, pieces, whether the free change was used), records of pieces received from ads and ad verification codes
 - Friendships, block records, and blankets sent and received
 - Blanket party membership (including records of parties you left) and party invitations sent and received
