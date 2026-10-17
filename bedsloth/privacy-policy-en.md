@@ -108,7 +108,7 @@ or health data). This is used to prevent ranking manipulation.
 | Nickname wallet (number of Nickname Passes held (up to 5), number of passes refunded after being used, pieces collected, whether the one free change has been used) | Nickname change feature, taking passes back on refund |
 | Records of Nickname Pass pieces received by watching an ad (ad reward transaction ID, date, time) | Giving pieces (up to 5 a day), preventing double rewards |
 | Records of story bonus fluff received by watching an ad (chapter, amount, ad reward transaction ID, time) | Calculating your fluff balance, giving the bonus only once per chapter |
-| Records of decorations tried on for a day by watching an ad (decoration, date, end time, ad reward transaction ID) | Showing the one-day try-on (once a day), preventing duplicates |
+| Records of decorations tried on for a day by watching an ad (decoration, date, end time, ad reward transaction ID) | Showing the one-day try-on (up to 3 a day), preventing duplicates |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
 | Push token, app language, time zone, whether to receive party chat notifications (if friend updates are on) | Delivering friend update and party chat notifications |
 
@@ -219,8 +219,8 @@ notifications created on your device** and do not go through a server.
   passed to Google (AdMob). Your step count and account identifier are not sent to Google. The server stores the
   record (ad reward transaction ID, date, time).
 - **Watching an ad for story bonus fluff, or to try on a decoration for a day (rewarded ads):** in the Sloth Diary you can
-  get bonus fluff once for each chapter whose story reward you received, and once a day you can try on a decoration you
-  do not own for 24 hours. Here too the app leaves the chapter or decoration and the date **directly on our server** and
+  get bonus fluff once for each chapter whose story reward you received, and up to 3 times a day you can try on decorations you
+  do not own for 24 hours each. Here too the app leaves the chapter or decoration and the date **directly on our server** and
   receives a random verification code, and **only this code** is passed to Google (AdMob). Your step count and account
   identifier are not sent to Google. The server stores the record (chapter or decoration, date, end time, ad reward
   transaction ID, time). A try-on is only drawn on screen, so the decorations you bought and what you have equipped do not change.
