@@ -234,7 +234,7 @@ Each user has one 6-character **friend (invite) code**. When you give your code 
 someone and they enter it in the app, you become **friends** (up to 30). We store who is
 friends with whom and when.
 
-**Friend requests:** You can also send a friend request (up to 5 a day) to someone whose nickname you saw in the app — in the ranking, in the same blanket party, or a neighbor who tucked you in. You become friends when they accept. The recipient only sees your nickname, character and where they saw you, and declining is never shown to the sender. You can turn off requests from people you don't know in the Friends tab.
+**Friend requests:** You can also send a friend request (up to 5 a day) to someone whose nickname you saw in the app — in the ranking, in the same blanket party, or a neighbor who tucked you in. You become friends when they accept, and you get a notification that you are now friends. The recipient only sees your nickname, character and where they saw you, and declining is never shown to the sender. You can turn off requests from people you don't know in the Friends tab.
 
 Your friends can see: **your nickname, your most recent day's step count and that day's
 step limit, when that record was last updated, your sloth's decorations, and whether you
