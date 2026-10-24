@@ -1,7 +1,7 @@
 # BedSloth Privacy Policy
 
-**Last updated: 2026-10-18**
-**Effective date: 2026-10-18**
+**Last updated: 2026-10-24**
+**Effective date: 2026-10-24**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -110,7 +110,9 @@ or health data). This is used to prevent ranking manipulation.
 | Records of story bonus fluff received by watching an ad (chapter, amount, ad reward transaction ID, time) | Calculating your fluff balance, giving the bonus only once per chapter |
 | Records of decorations tried on for a day by watching an ad (decoration, date, end time, ad reward transaction ID) | Showing the one-day try-on (up to 3 a day), preventing duplicates |
 | Equipped decorations | Shown in your room and **to your friends and party members** |
-| Push token, app language, time zone, whether to receive party chat notifications (if friend updates are on) | Delivering friend update and party chat notifications |
+| Push token, app language, time zone, whether to receive party chat notifications and night-time updates, the type and time of updates held overnight (if friend updates are on) | Delivering friend update and party chat notifications |
+| Device time zone (e.g. Asia/Seoul) | Deciding your Tightrope ranking league (region). Not shown to other users |
+| Daily ranking results (league, that day's limit and step count, Tightrope rank, title, streak) | Showing yesterday's results, titles and the streak ranking. **Rank, title and streak appear in the ranking (top 100); titles are shown to friends and party members** |
 
 Your fluff (in-app points) balance is not stored; it is calculated from these records
 (including fluff purchase records) and invite reward records. Fluff can also be bought
@@ -157,7 +159,7 @@ your device.
 
 - **Friend update notifications (Firebase Cloud Messaging)** — To let you know when a friend
   tucks you in, saves your day with a skip pass, invites you to a blanket party, or talks to you in party chat, we store
-  **your device's push token, app language, time zone, and whether to receive party chat notifications** on our server. Notifications are
+  **your device's push token, app language, time zone, and whether to receive party chat notifications and night-time updates** on our server. Notifications are
   delivered through Google (Firebase Cloud Messaging) and, on iOS, Apple (APNs). The
   notification text contains only **the sender's nickname** (no step counts or account
   identifiers). If you turn off "Friend updates" in Settings or turn off the device
@@ -390,10 +392,10 @@ it. Tapping a product link takes you to the Coupang website or app, and any proc
 of information after that follows Coupang's privacy policy. These are products from
 Coupang Korea and are ordered and shipped only within Korea.
 
-Outside Korea and Japan, the section may show affiliate links from the Amazon
-(amazon.com) Associates program. As an Amazon Associate I earn from qualifying
-purchases. After you tap a link, Amazon's privacy notice applies. No recommended
-products are shown in the Japan region.
+In the Japan region, the section may show affiliate links from the Amazon.co.jp
+Associates program, and outside Korea and Japan, from the Amazon (amazon.com)
+Associates program. As an Amazon Associate I earn from qualifying purchases. After
+you tap a link, Amazon's privacy notice applies.
 
 To learn which picks are popular, the app records the **product name and recommendation
 keyword** in usage statistics (Firebase Analytics) when you tap a product link. This
@@ -408,7 +410,7 @@ Coupang or Amazon.
   account.**
 - When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
   badges, achievements, Sloth Diary progress and story rewards, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff (including fluff purchase records), nickname wallet (passes and pieces) and ad piece records and verification codes, story bonus and decoration try-on records, decorations, friends / blocks / blankets, records of being rescued,
-  party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, and your
+  party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, your device time zone and daily ranking results, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
   [Account deletion](account-deletion-en.md)).
@@ -432,8 +434,10 @@ Coupang or Amazon.
   - Purchase records held by Google / Apple / RevenueCat follow their own policies.
 - Crash reports (Firebase Crashlytics) are deleted automatically after 90 days, and user-level usage
   statistics (Firebase Analytics) after at most 14 months.
-- The push token, app language, time zone, and party chat notification setting are kept until you turn off "Friend updates" or delete your
-  account, or for 90 days after you last opened the app.
+- The push token, app language, time zone, and party chat and night-time notification settings are kept until you turn off "Friend updates"
+  or delete your account, or for 90 days after you last opened the app.
+- Records of friend updates held back at night (11 PM–8 AM) — the recipient, the type of update, and the time — are deleted once they are
+  sent together in the morning, and automatically after **24 hours** at the latest.
 - Party chat messages are deleted automatically **7 days after they are sent**.
 - Records of members who left or were removed from a party (membership period, how they left, and their step count and
   step limit on the day they left) are deleted automatically **92 days after the day they left** (earlier if the account

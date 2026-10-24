@@ -4,7 +4,7 @@ lang: en
 
 # BedSloth — Delete Your Account and Data
 
-**Last updated: 2026-10-18**
+**Last updated: 2026-10-24**
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -60,7 +60,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Your invite code
 - Device upload keys used for background step uploads
 - Reports you made and reports about you
-- Ranking information
+- Ranking information (including your device time zone and daily ranking results, titles and streaks)
 
 Deletion cannot be undone.
 
