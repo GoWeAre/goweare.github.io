@@ -61,6 +61,7 @@ Deleting your account **immediately and permanently** deletes the following from
 - Device upload keys used for background step uploads
 - Reports you made and reports about you
 - Ranking information (including your device time zone and daily ranking results, titles and streaks)
+- Friend requests (sent and received requests and your request setting)
 
 Deletion cannot be undone.
 

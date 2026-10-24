@@ -113,6 +113,7 @@ or health data). This is used to prevent ranking manipulation.
 | Push token, app language, time zone, whether to receive party chat notifications and night-time updates, the type and time of updates held overnight (if friend updates are on) | Delivering friend update and party chat notifications |
 | Device time zone (e.g. Asia/Seoul) | Deciding your Tightrope ranking league (region). Not shown to other users |
 | Daily ranking results (league, that day's limit and step count, Tightrope rank, title, streak) | Showing yesterday's results, titles and the streak ranking. **Rank, title and streak appear in the ranking (top 100); titles are shown to friends and party members** |
+| Friend request records (sender, recipient, where they saw you (ranking, party or blanket), time, whether declined) and your setting for requests from people you don't know | Delivering and accepting friend requests. **The recipient sees the sender's nickname, character and where they saw them.** Unanswered requests are kept for 7 days; declined requests are kept for 30 days to prevent repeat requests, without telling the sender |
 
 Your fluff (in-app points) balance is not stored; it is calculated from these records
 (including fluff purchase records) and invite reward records. Fluff can also be bought
@@ -232,6 +233,8 @@ notifications created on your device** and do not go through a server.
 Each user has one 6-character **friend (invite) code**. When you give your code to
 someone and they enter it in the app, you become **friends** (up to 30). We store who is
 friends with whom and when.
+
+**Friend requests:** You can also send a friend request (up to 5 a day) to someone whose nickname you saw in the app — in the ranking, in the same blanket party, or a neighbor who tucked you in. You become friends when they accept. The recipient only sees your nickname, character and where they saw you, and declining is never shown to the sender. You can turn off requests from people you don't know in the Friends tab.
 
 Your friends can see: **your nickname, your most recent day's step count and that day's
 step limit, when that record was last updated, your sloth's decorations, and whether you
@@ -410,7 +413,7 @@ Coupang or Amazon.
   account.**
 - When you delete your account, your step records, nickname, limits, weekday limit settings and limit adjustment records, abnormal-use flags, streaks and
   badges, achievements, Sloth Diary progress and story rewards, Streak Savers, postpone passes and exemption records, subscription status, quests and fluff (including fluff purchase records), nickname wallet (passes and pieces) and ad piece records and verification codes, story bonus and decoration try-on records, decorations, friends / blocks / blankets, records of being rescued,
-  party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, your device time zone and daily ranking results, and your
+  party membership (including records of parties you left) and invitations, party chat messages you wrote and your read position, and any chat restriction record, invite code, reports you made or received, your device upload keys, your device time zone and daily ranking results, friend request records and setting, and your
   linked Google / Apple account information and Apple refresh token are
   **deleted immediately** (we ask Apple to revoke the Apple token right before deletion). You can do this inside the app (see
   [Account deletion](account-deletion-en.md)).
