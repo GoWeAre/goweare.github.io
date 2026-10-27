@@ -1,7 +1,9 @@
 # My Freesia Privacy Policy
 
-**Last updated: 2026-10-27**
+**Last updated: 2026-10-28**
 **Effective date: 2026-10-27**
+
+**Rewarded-ad amendment notice (2026-10-28):** The additional advertising provisions in §12 are planned to apply from 2026-11-27. Existing provisions continue to apply. Required advance notices and consent steps will be completed before the advertising feature is offered.
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -21,7 +23,7 @@ how you can delete it.
 
 ### 2.1 Guest mode ("Browse")
 
-If you use the app as a guest without signing in, **nothing is stored on our server.** Everything you
+If you use the app as a guest without signing in, **your planner records are not stored on our server.** Everything you
 write stays on this device only and is removed when you delete the app or reset the device. Purchases
 and syncing between devices are not available in guest mode.
 
@@ -145,8 +147,7 @@ that restored it (one purchase applies to one account only).
   request time and account identifier are kept in the logs of our server provider (Supabase). They are
   used only for security and troubleshooting and are deleted automatically when the provider's log
   retention period ends.
-- **No analytics or advertising tools.** The app contains no analytics, crash reporting or advertising
-  SDKs. It does not read the advertising identifier (IDFA) and does not track you.
+- **Optional rewarded ads:** Versions offering this feature include the Google AdMob SDK. See §12 for processing when you choose an ad. We do not use a separate app analytics or crash-reporting service.
 
 ### 3.7 Information stored only on your device
 
@@ -194,7 +195,7 @@ app does not ask for location, contacts, calendars, health data or ad tracking p
 
 ## 5. Third-party processing
 
-We **do not sell or provide your information to third parties** (except when an investigative agency or
+We **do not sell your information**. Information for optional rewarded ads may be sent to Google as described in §12; we do not otherwise provide your information to third parties (except when an investigative agency or
 similar authority requests it through lawful procedures). We entrust processing to the companies below
 only as far as needed to run the service.
 
@@ -202,7 +203,7 @@ only as far as needed to run the service.
 |---|---|---|
 | Supabase Inc. | Authentication; storing planner records, diary photos, carrot records, purchase verification records, push tokens and reminders; running server functions | https://supabase.com/privacy |
 | Apple Inc. | Sign in with Apple, token revocation on account deletion, delivering push notifications (APNs), App Store payments and server notifications | https://www.apple.com/legal/privacy/ |
-| Google LLC | Google sign-in (if you choose it), public holiday lookup, fonts for PDFs | https://policies.google.com/privacy |
+| Google LLC | Google sign-in (if you choose it), public holiday lookup, fonts for PDFs; optional AdMob rewarded ads (§12) | https://policies.google.com/privacy |
 | Kakao Corp. | Kakao sign-in (if you choose it) | https://www.kakao.com/policy/privacy |
 
 ### 5.1 International transfers
@@ -253,7 +254,7 @@ You can do the following at any time.
 My Freesia does not accept sign-ins (account creation) from children under 14. Before signing in, you are
 asked to confirm that you are 14 or older. The answer stays on your device and is never sent to our server.
 If you answer that you are under 14, you cannot sign in and can use the app only in guest mode, which stores
-nothing on our server. Guest records exist only on your device, so they are lost if you delete the app or
+no planner records on our server. Guest records exist only on your device, so they are lost if you delete the app or
 change devices.
 
 If we nevertheless learn that personal information of a child under 14 was collected, we will delete it
@@ -279,3 +280,26 @@ the change takes effect. Changes that matter more to you, such as collecting new
 - Privacy officer: Representative, 그이어 (GoWeAre)
 - Email: go.we.are.official@gmail.com
 - Response time: within 10 days of receipt
+
+## 12. Optional rewarded ads and sticker trials (planned from 2026-11-27)
+
+### Choice and trial
+
+If you select “Watch an ad · try for 24 hours” or “Watch an ad · extend 24 hours,” Google AdMob (Google Mobile Ads SDK) serves an ad. You can use basic features or buy a set without watching ads. This section also applies to guests; keeping guest planner records on-device does not exclude advertising SDK processing.
+
+After a completed ad, the set ID and device-clock expiry are saved only on-device, without server sync. Access lasts 24 hours. Expired trial information stays until you choose whether to keep it, remove the trial, or delete app data. Renewal or purchase reapplies the design. Removing a trial never deletes challenge progress or notes.
+
+### Advertising data and purposes
+
+Google may process IP-based approximate location, device/app/developer identifiers, ad views and interactions, and crash/performance diagnostics for ad delivery, measurement, troubleshooting and fraud prevention. Access to advertising identifiers depends on device permissions and settings.
+
+The app requests non-personalized ads; these still involve data processing. Planner content, moods, diaries, photos and social-login information are not included in ad requests. The SDK may use local storage and similar technologies for ads and consent management.
+
+### External processing and controls
+
+Before ad requests, Google UMP checks consent and displays choices where required. Change available choices in the shop’s **Ad privacy options**. Options vary by region and device settings. Declining ads does not affect basic features or purchased sets.
+
+Google LLC receives advertising data through encrypted connections when ads are requested and may process it on servers in the US and other countries. Retention and deletion follow Google’s policies and your consent/settings. Deleting your app account does not necessarily delete Google’s advertising records.
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [How Google uses information from apps using its services](https://policies.google.com/technologies/partner-sites)
