@@ -283,6 +283,8 @@ the change takes effect. Changes that matter more to you, such as collecting new
 
 ## 12. Optional rewarded ads and sticker trials (planned from 2026-11-27)
 
+Ad trials are offered only to people aged 16 or older. Before requesting ads, we ask you to declare whether you are at least 16. We do not collect your birth date; only your selected age range is saved on this device. Choosing under 16 prevents ad requests. Correct a mistaken selection in the shop under “Age for optional ads.” Basic features and sticker purchases remain available without ads.
+
 ### Choice and trial
 
 If you select “Watch an ad · try for 24 hours” or “Watch an ad · extend 24 hours,” Google AdMob (Google Mobile Ads SDK) serves an ad. You can use basic features or buy a set without watching ads. This section also applies to guests; keeping guest planner records on-device does not exclude advertising SDK processing.
