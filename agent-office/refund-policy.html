@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Office — Purchases and Refunds</title>
+<script>
+  // 브라우저 언어에 맞는 문서로 보낸다. 중국어는 번체이거나 대만·홍콩·마카오일 때만 번체,
+  // 간체는 다음 선호 언어로 넘어간다. 포르투갈어는 모두 pt-BR로 보낸다. 맞는 언어가 없으면 영어.
+  (function () {
+    var available = ['ko', 'en', 'ja', 'zh-Hant', 'de', 'es', 'pt-BR'];
+    function pick(tag) {
+      var parts = String(tag).toLowerCase().split(/[-_]/);
+      if (parts[0] === 'pt') return 'pt-BR';
+      if (parts[0] !== 'zh') return parts[0];
+      var traditional = parts.indexOf('hant') !== -1 ||
+        (parts.indexOf('hans') === -1 && ['tw', 'hk', 'mo'].some(function (r) { return parts.indexOf(r) !== -1; }));
+      return traditional ? 'zh-Hant' : null;
+    }
+    var langs = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < langs.length; i++) {
+      var code = pick(langs[i]);
+      if (code && available.indexOf(code) !== -1) { location.replace('refund-policy-' + code); return; }
+    }
+    location.replace('refund-policy-en');
+  })();
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 24px">
+<p>Purchases and Refunds</p>
+<ul><li><a href="refund-policy-ko">한국어</a></li><li><a href="refund-policy-en">English</a></li><li><a href="refund-policy-ja">日本語</a></li><li><a href="refund-policy-zh-Hant">繁體中文</a></li><li><a href="refund-policy-de">Deutsch</a></li><li><a href="refund-policy-es">Español</a></li><li><a href="refund-policy-pt-BR">Português (Brasil)</a></li></ul>
+</body>
+</html>
