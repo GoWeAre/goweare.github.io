@@ -8,7 +8,7 @@
 
 **Preis und Kauf.** Agent Office ist ein Einmalkauf (US$4.99 in den USA; lokale Preise werden im jeweiligen Store angezeigt). Es gibt keine Abonnements, In-App-Käufe oder Werbung. Sie können die App mit dem Store-Konto, mit dem Sie sie gekauft haben, erneut installieren. Die Versionen im Microsoft Store und auf Steam sind separate Produkte; der Kauf der einen schließt die andere nicht ein.
 
-**Vor dem Kauf.** Es gibt keine separate Testversion. Bitte prüfen Sie:
+**Vor dem Kauf.** Auf Steam gibt es eine kostenlose Demo (ein Tool, eine Etage, 24 Stunden Nutzung). Im Microsoft Store gibt es keine separate Testversion. Bitte prüfen Sie:
 
 - Windows 10 (Build 19041) oder neuer, 64-Bit, mit Microsoft Edge WebView2 Runtime
 - Claude Code oder Codex muss auf demselben Computer verwendet werden, damit echte Aufgaben angezeigt werden
