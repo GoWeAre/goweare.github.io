@@ -29,4 +29,9 @@
 - 개인정보처리방침 / Privacy Policy: [한국어](agent-office/privacy-policy-ko.md) · [English](agent-office/privacy-policy-en.md) · [日本語](agent-office/privacy-policy-ja.md) · [繁體中文](agent-office/privacy-policy-zh-Hant.md) · [Deutsch](agent-office/privacy-policy-de.md) · [Español](agent-office/privacy-policy-es.md) · [Português (Brasil)](agent-office/privacy-policy-pt-BR.md)
 - 구매·환불 / Purchases and Refunds: [한국어](agent-office/refund-policy-ko.md) · [English](agent-office/refund-policy-en.md) · [日本語](agent-office/refund-policy-ja.md) · [繁體中文](agent-office/refund-policy-zh-Hant.md) · [Deutsch](agent-office/refund-policy-de.md) · [Español](agent-office/refund-policy-es.md) · [Português (Brasil)](agent-office/refund-policy-pt-BR.md)
 
+## SetupPick
+
+- 이용약관: [한국어](setuppick/terms-ko.md)
+- 개인정보처리방침: [한국어](setuppick/privacy-policy-ko.md)
+
 문의 / Contact: go.we.are.official@gmail.com
