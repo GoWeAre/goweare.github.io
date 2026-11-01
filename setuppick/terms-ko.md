@@ -88,4 +88,5 @@
 ## 13. 연락처
 
 - 사업자명: 그이어(Go We Are)
+- 사업자등록번호: 842-36-01663
 - 이메일: go.we.are.official@gmail.com
