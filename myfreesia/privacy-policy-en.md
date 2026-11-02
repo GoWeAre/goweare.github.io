@@ -1,9 +1,9 @@
 # My Freesia Privacy Policy
 
-**Last updated: 2026-10-28**
+**Last updated: 2026-11-03**
 **Effective date: 2026-10-27**
 
-**Rewarded-ad amendment notice (2026-10-28):** The additional advertising provisions in §12 are planned to apply from 2026-11-27. Existing provisions continue to apply. Required advance notices and consent steps will be completed before the advertising feature is offered.
+**Rewarded-ad amendment notice (2026-11-03):** The advertising provisions in §12 apply from 2026-11-03. Ads are shown only after confirming you are 16 or older and completing any required consent steps.
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -281,7 +281,7 @@ the change takes effect. Changes that matter more to you, such as collecting new
 - Email: go.we.are.official@gmail.com
 - Response time: within 10 days of receipt
 
-## 12. Optional rewarded ads and sticker trials (planned from 2026-11-27)
+## 12. Optional rewarded ads and sticker trials (effective 2026-11-03)
 
 Ad trials are offered only to people aged 16 or older. Before requesting ads, we ask you to declare whether you are at least 16. We do not collect your birth date; only your selected age range is saved on this device. Choosing under 16 prevents ad requests. Correct a mistaken selection in the shop under “Age for optional ads.” Basic features and sticker purchases remain available without ads.
 
