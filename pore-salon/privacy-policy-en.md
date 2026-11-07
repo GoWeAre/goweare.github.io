@@ -59,7 +59,7 @@ If you sign in with a Google or Apple account under Settings or MY → Link acco
 |---|---|---|
 | Account identifiers | The user identifier Google or Apple issues to this Game, and an account ID created by our server | Keep one person's progress in one account |
 | Email address | The email passed by the sign-in service (Apple's relay address if you choose "Hide My Email") | Link Google and Apple sign-ins that share an email; shown partly masked in Settings |
-| Sign-in profile | With Google sign-in, the name and profile picture address that Google sends along may remain in the sign-in record. The Game does not display them or use them for anything else | Processing the sign-in |
+| Sign-in profile | With Google sign-in, the name and profile picture address that Google sends along are stored in the sign-in record (nothing like this is stored for Apple sign-in). The Game does not display them or use them for anything else, and they are deleted with your account | Processing the sign-in |
 | Game progress | From 1-a: stars per stage, best scores and records, coin earnings and spending, looks you own and wear, skin tone, whether you have seen story scenes and tips, customer review log, claimed awards and running counts of treatments and requests, rename tickets and pieces, invite rewards, the ranking key and nickname, and coins, Remove Ads and rename tickets from purchases | Continue on another device |
 | Sign-in tokens | A session token (kept on your device only) and a token used to disconnect Sign in with Apple (kept on our server) | Stay signed in; disconnect Apple when you delete your account |
 
@@ -146,7 +146,7 @@ The Toss app's own data handling is governed by **Viva Republica (Toss)'s privac
 |---|---|---|---|
 | Supabase, Inc. | Hosting for the ranking, nickname, report, update-check, account and progress, purchase record and invite server (processor) | Items in 1-b, 1-c, 1-e, 1-f, 1-g and 1-h, connection data | Mobile app and Toss version |
 | Discord Inc. | Delivering nickname report notifications to the operator (processor) | The reported nickname and a ranking reference | Mobile app and Toss version |
-| Google LLC, Apple Inc. (sign-in) | Verify who you are with the account you choose (processed under their own policies) | The sign-in request and its result (account identifier, email, and for Google your name and profile picture) | Mobile app, only if you sign in |
+| Google LLC, Apple Inc. (sign-in) | Verify who you are with the account you choose (processed under their own policies) | The sign-in request and its result (account identifier, email, and for Google your name and profile picture address) | Mobile app, only if you sign in |
 | Google LLC (AdMob) | Advertising (processed under Google's own policies) | Ad data in section 2 | Mobile app |
 | Google LLC (Play Games) | Achievements and gameplay records (processed under Google's own policies) | Data in 1-i | Android app |
 | RevenueCat, Inc. | In-app purchase receipt validation and purchase notifications (processor) | Purchase records (product, time of purchase, store transaction ID), an app user ID for purchases (your account ID if signed in, otherwise an anonymous ID) | Mobile app |
