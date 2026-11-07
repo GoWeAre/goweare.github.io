@@ -1,6 +1,6 @@
 # My Freesia プライバシーポリシー
 
-**最終更新日: 2026-11-03**
+**最終更新日: 2026-11-07**
 **施行日：2026-10-27**
 
 **リワード広告に関する改定のお知らせ(2026-11-03)：** 第12条の広告に関する条項は2026-11-03から適用します。広告は16歳以上であることの確認と必要な同意手続きを経た後にのみ表示します。
@@ -197,7 +197,7 @@ My Freesia(마이 프리지아、以下「アプリ」)は、やること・予�
 | Supabase Inc. | 会員認証、プランナーの記録・日記の写真・ニンジンの記録・決済確認の記録・プッシュトークンと通知の保存、サーバー機能の実行 | https://supabase.com/privacy |
 | Apple Inc. | Appleでサインイン、アカウント削除時のトークン取り消し、プッシュ通知の配信(APNs)、App Storeの決済とサーバー通知 | https://www.apple.com/legal/privacy/ |
 | Google LLC | Googleログイン(利用者が選んだ場合)、祝日情報の取得、PDF用フォントの提供; 任意のAdMobリワード広告（第12条） | https://policies.google.com/privacy |
-| Kakao Corp. | カカオログイン(利用者が選んだ場合) | https://www.kakao.com/policy/privacy |
+| Kakao Corp. | カカオログイン(利用者が選んだ場合)、アカウント削除時のアプリ連携解除 | https://www.kakao.com/policy/privacy |
 
 ### 5.1 外国への移転
 
@@ -266,7 +266,7 @@ My Freesiaは14歳未満のお子さまの会員登録(ログイン)を受け付
 
 ## 11. お問い合わせ
 
-- 個人情報保護責任者：그이어(GoWeAre)代表
+- 個人情報保護責任者：Hyeongseop Lee（그이어(GoWeAre)代表）
 - メール：go.we.are.official@gmail.com
 - 処理期間：受付後10日以内
 

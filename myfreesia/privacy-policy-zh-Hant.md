@@ -1,6 +1,6 @@
 # My Freesia 隱私權政策
 
-**最後更新日期：2026-11-03**
+**最後更新日期：2026-11-07**
 **施行日期：2026-10-27**
 
 **獎勵廣告修訂公告（2026-11-03）：** 第12條的廣告條款自2026-11-03起適用。廣告僅在確認年滿16歲並完成必要的同意程序後才會顯示。
@@ -174,7 +174,7 @@ App **不會出售**蒐集的資訊。自選獎勵廣告的資訊可能依第12�
 | Supabase Inc. | 會員認證；儲存手帳紀錄、日記照片、紅蘿蔔紀錄、付款確認紀錄、推播權杖與提醒；執行伺服器功能 | https://supabase.com/privacy |
 | Apple Inc. | 使用 Apple 登入、刪除帳號時撤銷權杖、傳送推播通知（APNs）、App Store 付款與伺服器通知 | https://www.apple.com/legal/privacy/ |
 | Google LLC | Google 登入（使用者選擇時）、查詢國定假日、提供 PDF 用字型; 自選AdMob獎勵廣告（第12條） | https://policies.google.com/privacy |
-| Kakao Corp. | Kakao 登入（使用者選擇時） | https://www.kakao.com/policy/privacy |
+| Kakao Corp. | Kakao 登入（使用者選擇時）、刪除帳號時解除與 App 的連結 | https://www.kakao.com/policy/privacy |
 
 ### 5.1 國際傳輸
 
@@ -237,7 +237,7 @@ My Freesia 不接受未滿 14 歲兒童註冊會員（登入）。登入前會�
 
 ## 11. 聯絡我們
 
-- 個人資料保護負責人：그이어（GoWeAre）代表
+- 個人資料保護負責人：Hyeongseop Lee（그이어（GoWeAre）代表）
 - 聯絡信箱：go.we.are.official@gmail.com
 - 處理期間：收到後 10 天內
 

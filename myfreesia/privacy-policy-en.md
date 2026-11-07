@@ -1,6 +1,6 @@
 # My Freesia Privacy Policy
 
-**Last updated: 2026-11-03**
+**Last updated: 2026-11-07**
 **Effective date: 2026-10-27**
 
 **Rewarded-ad amendment notice (2026-11-03):** The advertising provisions in §12 apply from 2026-11-03. Ads are shown only after confirming you are 16 or older and completing any required consent steps.
@@ -204,7 +204,7 @@ only as far as needed to run the service.
 | Supabase Inc. | Authentication; storing planner records, diary photos, carrot records, purchase verification records, push tokens and reminders; running server functions | https://supabase.com/privacy |
 | Apple Inc. | Sign in with Apple, token revocation on account deletion, delivering push notifications (APNs), App Store payments and server notifications | https://www.apple.com/legal/privacy/ |
 | Google LLC | Google sign-in (if you choose it), public holiday lookup, fonts for PDFs; optional AdMob rewarded ads (§12) | https://policies.google.com/privacy |
-| Kakao Corp. | Kakao sign-in (if you choose it) | https://www.kakao.com/policy/privacy |
+| Kakao Corp. | Kakao sign-in (if you choose it); unlinking the app from your Kakao account when you delete your account | https://www.kakao.com/policy/privacy |
 
 ### 5.1 International transfers
 
@@ -277,7 +277,7 @@ the change takes effect. Changes that matter more to you, such as collecting new
 
 ## 11. Contact
 
-- Privacy officer: Representative, 그이어 (GoWeAre)
+- Privacy officer: Hyeongseop Lee, Representative of 그이어 (GoWeAre)
 - Email: go.we.are.official@gmail.com
 - Response time: within 10 days of receipt
 

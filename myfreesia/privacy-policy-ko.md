@@ -1,6 +1,6 @@
 # 마이 프리지아 개인정보처리방침
 
-**최종 수정일: 2026-11-03**
+**최종 수정일: 2026-11-07**
 **시행일: 2026-10-27**
 
 **보상형 광고 개정 안내(2026-11-03):** 제12조의 광고 관련 조항은 2026-11-03부터 적용합니다. 광고는 만 16세 이상 확인과 필요한 동의 절차를 거친 뒤에만 보여 줍니다.
@@ -184,7 +184,7 @@ Apple이 직접 처리합니다.
 | Supabase Inc. | 회원 인증, 플래너 기록·일기 사진·당근 기록·결제 확인 기록·푸시 토큰과 알림 저장, 서버 기능 실행 | https://supabase.com/privacy |
 | Apple Inc. | Sign in with Apple, 계정 삭제 시 토큰 폐기, 푸시 알림 전달(APNs), App Store 결제와 서버 알림 | https://www.apple.com/legal/privacy/ |
 | Google LLC | Google 로그인(이용자가 선택한 경우), 공휴일 정보 조회, PDF용 글꼴 제공; 선택형 AdMob 보상형 광고(§12) | https://policies.google.com/privacy |
-| (주)카카오 | 카카오 로그인(이용자가 선택한 경우) | https://www.kakao.com/policy/privacy |
+| (주)카카오 | 카카오 로그인(이용자가 선택한 경우), 계정 삭제 시 앱과의 연결 끊기 | https://www.kakao.com/policy/privacy |
 
 ### 5.1 국외 이전
 
@@ -250,7 +250,7 @@ Apple이 직접 처리합니다.
 
 ## 11. 문의
 
-- 개인정보 보호책임자: 그이어(GoWeAre) 대표
+- 개인정보 보호책임자: Hyeongseop Lee, 그이어(GoWeAre) 대표
 - 문의: go.we.are.official@gmail.com
 - 처리 기간: 접수 후 10일 이내
 
