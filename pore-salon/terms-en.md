@@ -2,7 +2,7 @@
 
 These are the terms for **Pore Salon Simulator** (the "Game"), provided by **Go We Are** ("we"). The Game is offered as an Android/iOS app (the "mobile app") and as a version that runs inside the Toss app (Apps in Toss, the "Toss version"). These terms apply to both.
 
-**Effective date:** 2026-11-08
+**Effective date:** 2026-11-11
 
 ## 1. Using the Game
 
@@ -28,7 +28,7 @@ The mobile app and the Toss version sell the same items.
 | Rename ticket | Consumable | Change your ranking nickname once |
 
 - **Price:** the amount the store or Toss shows on the purchase screen. Currency and tax display vary by country and platform.
-- **Payment:** processed by Google Play or the App Store in the mobile app, and by Toss in the Toss version. We never receive your card details.
+- **Payment:** processed by Google Play or the App Store in the mobile app (by ONE store if you got the app from ONE store), and by Toss in the Toss version. We never receive your card details.
 - **Mobile app**
   - Coin packs and rename tickets can be bought only with a linked account. They are kept on your account and can be used on other devices.
   - Remove Ads can be bought without linking an account. After a reinstall, use "Restore purchases" on the coin screen.
@@ -45,6 +45,7 @@ The mobile app and the Toss version sell the same items.
 - **Mobile app refunds:** the store processes the payment, so request refunds from the store where you bought the item.
   - Google Play: Play Store app → profile → Payments & subscriptions → Budget & history, then choose the order and request a refund.
   - App Store: choose the purchase at <https://reportaproblem.apple.com> and request a refund.
+  - ONE store: ONE store processes the payment, so request a refund from ONE store customer service. You can also contact us (section 6) and we will walk you through it.
 - **Toss version refunds:** in the Toss app's payment history, tap "Get a refund" on the purchase. We check whether the item was used and approve or decline the request. Once approved, it is processed under your device's app store policy, and Toss tells you the result. You can also contact us (section 6).
 - **What a refund takes back**
   - We remove the coins and rename tickets from that purchase from your account, down to zero if the balance is lower.
@@ -81,4 +82,4 @@ The mobile app and the Toss version sell the same items.
 - Company: Go We Are
 - Email: go.we.are.official@gmail.com
 
-Previous version effective: 2026-10-11.
+Previous version effective: 2026-11-08.

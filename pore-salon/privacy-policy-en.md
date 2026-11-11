@@ -1,8 +1,8 @@
 # Pore Salon Simulator — Privacy Policy
 
-**Go We Are** ("we") provides the mobile game **Pore Salon Simulator** (the "Game"). The Game is offered as an Android/iOS app (the "mobile app") and as a version that runs inside the Toss app (Apps in Toss, the "Toss version").
+**Go We Are** ("we") provides the mobile game **Pore Salon Simulator** (the "Game"). The Game is offered as an Android/iOS app (the "mobile app") and as a version that runs inside the Toss app (Apps in Toss, the "Toss version"). The Android version distributed through ONE Store (the "ONE Store edition") is part of the mobile app and differs only where noted below.
 
-**Effective date:** 2026-11-08
+**Effective date:** 2026-11-11
 
 ## 1. Information we collect and why
 
@@ -16,7 +16,7 @@ The Game never asks for your name, phone number, address or location.
 - Stars per stage, best Endless score, best records (length/amount extracted), coins and the looks you picked in the shop, hearts, Daily Guest records, and whether you have seen story scenes and tips
 - Settings such as language, sound, vibration, art style, skin tone, customer reactions and heart notifications
 - The ranking key and nickname (see b), scores not yet sent, nicknames you chose to hide, and an update version you chose to skip
-- A token that keeps you signed in, and on the Toss version a list of purchase order numbers (see g)
+- A token that keeps you signed in, and a list of purchase order numbers on the Toss version or purchase tokens on the ONE Store edition (see g)
 - These are removed from your device when you uninstall the Game or clear its data. Progress saved to an account (see e and f) stays on our server.
 - On iOS, reinstalling the Game signs you out. Sign in again to get your account's progress back.
 
@@ -43,11 +43,11 @@ When an Endless run starts, the Game sends its ranking key and platform to obtai
 
 **c. Update check — mobile app only**
 
-When the Game starts (or returns after a long break) it asks the server whether a newer version exists. It sends **only the platform (android/ios)** — nothing that identifies you. The version comparison happens on your device.
+When the Game starts (or returns after a long break) it asks the server whether a newer version exists. It sends **only the platform (android/ios, or onestore on the ONE Store edition)** — nothing that identifies you. The version comparison happens on your device.
 
 **d. Device features**
 
-- Vibration (haptics) and the rating prompt (mobile app; the in-app review feature of Google Play or the App Store) only call a device or store feature. We receive no information from them.
+- Vibration (haptics) and the rating prompt (mobile app; the in-app review feature of Google Play or the App Store) only call a device or store feature. We receive no information from them. The ONE Store edition opens a link to its ONE Store page instead of a rating prompt.
 - Heart notifications (mobile app, only if you turn them on) are scheduled on your device and send nothing to our server. On Android 13 and later the Game asks for notification permission.
 - The check that stops hearts from being refilled by moving the device clock forward is calculated only on your device.
 
@@ -78,19 +78,20 @@ If you sign in with a Google or Apple account under Settings or MY → Link acco
 
 **g. Purchase records**
 
-- Mobile app: payments are processed by Google Play or the App Store, and receipts are validated and purchase notifications delivered through RevenueCat. Our server keeps the product, time of purchase, store transaction ID and the link to your account.
+- Mobile app (except the ONE Store edition): payments are processed by Google Play or the App Store, and receipts are validated and purchase notifications delivered through RevenueCat. Our server keeps the product, time of purchase, store transaction ID and the link to your account.
+- ONE Store edition: payments are processed by ONE Store. After you pay, the Game sends the purchase token and product ID to our server, which checks the purchase with ONE Store, adds the item to your account, and then completes the purchase (consumes consumable items; acknowledges the ad removal). Once a day our server reads ONE Store's list of cancelled purchases and reverses refunded ones. Our server keeps the purchase ID, product, time of purchase and the link to your account. The device keeps the purchase tokens still to be processed and those already processed.
 - Toss version: payments are processed by Toss. After you pay, the Game sends the order number to our server, which checks the order status with Toss and then adds the item to your account. Our server keeps the order number, product, time of purchase and the link to your account. The device keeps the numbers of orders still to be processed, orders already processed, and orders whose refund has been checked.
 - We never receive payment details such as card numbers.
 
-**h. Inviting friends — mobile app only**
+**h. Inviting friends — mobile app only (including the ONE Store edition)**
 
 - When you create or enter an invite code, the Game sends the ranking key and the code to our server. If you enter a code while signed in, your account ID is recorded too.
 - Our server keeps the ranking keys of the inviter and the invitee, the code, when the code was entered, when the condition (clearing stage 5) was met, and the rewards given. This is to stop the same person from claiming rewards more than once.
-- Invite links are shared using your device's share feature and clipboard. We do not know whom you sent them to.
+- Invite links are shared using your device's share feature and clipboard. We do not know whom you sent them to. On the ONE Store edition the invite message contains the address of its ONE Store page.
 
-**i. Google Play Games — Android app only**
+**i. Google Play Games — Android app only (not used by the ONE Store edition)**
 
-The Android app tries to sign in to Google Play Games when it starts, and sends achievements and gameplay events (stage number, treatments, clean treatments, stars, best combo, progress) to Google Play Games. Google processes this under its own policies, and you can manage your profile and visibility in the Play Games app. We do not combine it with ranking or account data.
+The Android app tries to sign in to Google Play Games when it starts, and sends achievements and gameplay events (stage number, treatments, clean treatments, stars, best combo, progress) to Google Play Games. Google processes this under its own policies, and you can manage your profile and visibility in the Play Games app. We do not combine it with ranking or account data. The ONE Store edition does not use Play Games and sends none of this.
 
 **j. Toss event log — Toss version only**
 
@@ -148,8 +149,9 @@ The Toss app's own data handling is governed by **Viva Republica (Toss)'s privac
 | Discord Inc. | Delivering nickname report notifications to the operator (processor) | The reported nickname and a ranking reference | Mobile app and Toss version |
 | Google LLC, Apple Inc. (sign-in) | Verify who you are with the account you choose (processed under their own policies) | The sign-in request and its result (account identifier, email, and for Google your name and profile picture address) | Mobile app, only if you sign in |
 | Google LLC (AdMob) | Advertising (processed under Google's own policies) | Ad data in section 2 | Mobile app |
-| Google LLC (Play Games) | Achievements and gameplay records (processed under Google's own policies) | Data in 1-i | Android app |
-| RevenueCat, Inc. | In-app purchase receipt validation and purchase notifications (processor) | Purchase records (product, time of purchase, store transaction ID), an app user ID for purchases (your account ID if signed in, otherwise an anonymous ID) | Mobile app |
+| Google LLC (Play Games) | Achievements and gameplay records (processed under Google's own policies) | Data in 1-i | Android app (not the ONE Store edition) |
+| RevenueCat, Inc. | In-app purchase receipt validation and purchase notifications (processor) | Purchase records (product, time of purchase, store transaction ID), an app user ID for purchases (your account ID if signed in, otherwise an anonymous ID) | Mobile app (not the ONE Store edition) |
+| ONE store Co., Ltd. | App store and payment processing; our server's purchase checks and refund-list lookups (processed under ONE Store's own policies) | Purchase token, product ID, purchase records (1-g) | ONE Store edition |
 | Viva Republica (Toss) | Host platform, issuing and checking the user key, payments and order checks, ads, event log | Data in section 3 | Toss version |
 
 - Supabase privacy policy: <https://supabase.com/privacy>. Server location: Republic of Korea (Seoul region). The hosting provider (Supabase, a US company) may access the server while operating or supporting the service.
@@ -203,4 +205,4 @@ The Game is not primarily directed to children and does not ask for names, conta
 
 ## 9. Changes
 
-We will announce changes on the store page or in the Game before they take effect. Previous version effective: 2026-10-16.
+We will announce changes on the store page or in the Game before they take effect. Previous version effective: 2026-11-08.
