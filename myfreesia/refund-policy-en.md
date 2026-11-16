@@ -1,13 +1,14 @@
 # My Freesia — Paid features and refunds
 
-**Last updated: 2026-10-27**
+**Last updated: 2026-11-17**
 **Effective date: 2026-10-27**
 
 ---
 
 **App:** My Freesia (마이 프리지아)
 
-Everything sold in My Freesia is bought through App Store billing. Apple handles payment and refunds;
+Everything sold in My Freesia is bought through App Store billing in the iOS app and Google Play Billing
+in the Android app. The store you paid through (Apple or Google) handles payment and refunds;
 this page explains what we sell and how refunds work. You need to sign in to buy, and what you buy is
 applied to the account you are signed in with, so you can use it on every device signed in to that
 account.
@@ -20,31 +21,35 @@ account.
 | My Freesia Premium (Yearly) | Auto-renewing subscription (1 year) | The Premium benefits below |
 | Lifetime | One-time purchase (non-consumable) | The Premium benefits below with no time limit |
 | Cat Diary theme | One-time purchase (non-consumable) | Keep using the Cat Diary theme |
+| Cocoa Bear theme | One-time purchase (non-consumable) | Keep using the Cocoa Bear theme |
+| Twinkling stars stickers | One-time purchase (non-consumable) | Keep using the Twinkling stars sticker set |
 
 **Premium benefits:** all premium themes, stickers and fonts (including new premium items as they
 come out), up to 10 mandala chart boards (1 free), unlimited D-days (1 free), and 3 diary photos a day
 (1 free).
 
-Prices are shown on the purchase buttons in your local currency, as set by the App Store.
+Prices are shown on the purchase buttons in your local currency, as set by the App Store or Google Play.
 Carrots, the pet's currency, are earned only through planner activities and are never sold. Carrots and
 decorations obtained with carrots cannot be exchanged for money.
 
 ## 2. Subscription renewal and cancellation
 
-- Payment is charged to your App Store account at confirmation of purchase.
+- Payment is charged to your App Store account (Google Play account on Android) at confirmation of purchase.
 - The subscription renews automatically for the period you chose (every month or every year) at the
   same price unless cancelled at least 24 hours before the end of the current period.
-- Cancel in the App Store's subscription settings. Deleting the app or your account does not cancel it.
+- Cancel in the subscription settings of the store you paid through. Deleting the app or your account does
+  not cancel it.
   - iPhone: Settings > your name > Subscriptions
+  - Android: Google Play app > profile > Payments & subscriptions > Subscriptions
 - After you cancel, Premium stays active until the end of the period you already paid for. We do not
   refund the remaining part of a period (except for the withdrawal right in section 3).
 
 ## 3. Withdrawal and refund rules
 
 - **Subscription:** within 7 days of payment you may withdraw and get a full refund if you have not used
-  the Premium benefits. After that, Apple's refund policy applies.
-- **Lifetime and Cat Diary theme:** within 7 days of buying you may withdraw and get a full refund if you
-  have not used the Premium benefits or the theme. If you have used them, delivery of the digital content
+  the Premium benefits. After that, the refund policy of the store you paid through (Apple or Google) applies.
+- **Lifetime, themes and stickers:** within 7 days of buying you may withdraw and get a full refund if you
+  have not used the Premium benefits or the theme or stickers you bought. If you have used them, delivery of the digital content
   has begun, so withdrawal may be limited.
 - If an item is not as described, or you paid but it was not applied, contact us regardless of the periods
   above. First try **Restore Purchases** in the Shop or on the Premium screen; if it is still not applied,
@@ -54,30 +59,38 @@ decorations obtained with carrots cannot be exchanged for money.
 
 ## 4. How to request a refund
 
-Only Apple can issue refunds.
+**App Store purchases (iOS):** only Apple can issue refunds.
 
 - Choose the purchase at https://reportaproblem.apple.com and submit a request.
 - If you are not sure how, or Apple declined your request, email us below and we will help.
 
+**Google Play purchases (Android):**
+
+- Within 48 hours of payment, you can request a refund yourself from your Google Play order history
+  (https://play.google.com/store/account/orderhistory).
+- After 48 hours, or for a withdrawal under section 3, email us below. We will check and refund you through
+  Google Play.
+
 ## 5. What changes after a refund
 
-- When a refund is confirmed, Apple notifies our server and the entitlement is removed from your account
+- When a refund is confirmed, Apple or Google notifies our server and the entitlement is removed from your account
   right away.
 - If a subscription or Lifetime purchase is refunded, Premium ends at that point and premium themes,
   stickers and fonts can no longer be used. Records you already made (D-days, mandala chart boards,
   attached photos, etc.) are not deleted; the free limits apply when you create new ones.
-- If the Cat Diary theme is refunded, that theme can no longer be used.
+- If a theme or sticker set is refunded, it can no longer be used.
 
 ## 6. Deleting your account
 
-Deleting your account also deletes your entitlement records on our server. Lifetime and theme purchases
-made with the same Apple account can be applied again with **Restore Purchases** after you sign in with a
-new account. A subscription is separate from your account, so cancel it in the App Store as well.
+Deleting your account also deletes your entitlement records on our server. Lifetime, theme and sticker purchases
+made with the same Apple account (the same Google account on Android) can be applied again with **Restore Purchases** after you sign in with a
+new account. A subscription is separate from your account, so cancel it in the App Store or Google Play as well.
 
 ## 7. Contact
 
 - **Email:** go.we.are.official@gmail.com
-- Including your order number (found in Apple's receipt email) and the purchase date helps us check
+- Including your order number (found in Apple's receipt email, or the number starting with GPA. in Google
+  Play's receipt email) and the purchase date helps us check
   quickly.
 
 ## 8. Seller
