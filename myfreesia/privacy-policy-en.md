@@ -1,9 +1,11 @@
 # My Freesia Privacy Policy
 
-**Last updated: 2026-11-16**
+**Last updated: 2026-11-17**
 **Effective date: 2026-10-27**
 
 **Rewarded-ad amendment notice (2026-11-03):** The advertising provisions in §12 apply from 2026-11-03. Ads are shown only after confirming you are 16 or older and completing any required consent steps.
+
+**Android version notice (2026-11-17):** We added how the Android version distributed on Google Play handles purchases (Google Play Billing) and notifications (on-device only) to §2.2, §3.4, §3.5, §4, §5 and §6.
 
 **Ads discontinued (2026-11-16):** Starting with the update that removes ads, the app no longer requests ads and no longer includes the Google AdMob SDK or Google's consent tool (UMP). Sticker sets can be tried free for 24 hours, once per set, without ads. While you use an earlier version that offers ads, the advertising provisions in §12 continue to apply.
 
@@ -43,6 +45,9 @@ the sign-in provider.
 | Google | Google account identifier, email address, name, profile photo address (URL) |
 | Kakao | Kakao account identifier, nickname. **We do not request your email or profile photo.** |
 
+In the Android app, all three sign-in options open in a browser window; we receive the same information
+listed above.
+
 Under **Connected Accounts** in Settings you can link several social accounts to one account or unlink
 them (at least one must remain). We receive the information in the table above for each account you link.
 
@@ -55,7 +60,9 @@ app shows the Apple sign-in sheet once more, uses the one-time authorization cod
 to disconnect the app (revoke the token), and then deletes the account. Neither the app nor our server
 keeps Apple's tokens. If the revocation does not go through, for example because of a problem on Apple's
 side or because you closed the sheet, the account is still deleted; in that case you can disconnect the app
-yourself in iOS **Settings > Apple ID (your name) > Sign-In & Security > Sign in with Apple**.
+yourself in iOS **Settings > Apple ID (your name) > Sign-In & Security > Sign in with Apple**. The **Android app** has no
+Apple sign-in sheet, so it does not send a revocation request when you delete your account; you can
+disconnect the app at https://account.apple.com under **Sign-In and Security > Sign in with Apple**.
 
 ## 3. Information we collect
 
@@ -111,7 +118,7 @@ device (§3.7).
 
 ### 3.4 Purchase information
 
-Premium and paid themes are bought through the App Store (sign-in required). To confirm a purchase is
+In the iOS app, premium and paid themes are bought through the App Store (sign-in required). To confirm a purchase is
 genuine, the app sends the transaction information signed by the App Store to our server, which checks
 the signature against Apple's certificates and then stores:
 
@@ -124,7 +131,15 @@ outside the app, we receive **App Store Server Notifications** from Apple and up
 above. **The app never receives or stores card numbers or other payment details**; Apple handles them
 directly.
 
-If you restore the same App Store purchase on a different account, the entitlement moves to the account
+**Android (Google Play Billing):** in the Android app, purchases go through Google Play Billing. When you
+start a purchase, the app passes **your account identifier in the app** to Google to link the payment to
+your account. The app sends the **purchase token** issued by Google to our server, which checks the
+purchase with the Google Play Developer API and stores the same items listed above (the Google Play order
+number is stored as the original transaction number; the purchase token itself is not stored). Refunds,
+renewals and expiries are applied when we receive Google's **Real-time developer notifications** (through
+Google Cloud Pub/Sub). Google handles payment details directly; the app never receives or stores them.
+
+If you restore the same App Store or Google Play purchase on a different account, the entitlement moves to the account
 that restored it (one purchase applies to one account only).
 
 ### 3.5 Notifications
@@ -142,6 +157,8 @@ that restored it (one purchase applies to one account only).
     is not used.
 - **Challenge reminders and all other notifications** are **local notifications** scheduled on your
   device and do not go through our server. In guest mode, event reminders are local notifications too.
+- **The Android app does not use server push.** All notifications, including event reminders, are
+  scheduled on your device, so no push token or reminder is stored on our server.
 
 ### 3.6 Information collected automatically
 
@@ -157,8 +174,9 @@ The following stays **on this device only** and is never sent to our server.
 
 - **App lock passcode:** the four-digit passcode is not stored as is; only a transformed value (hash) is
   kept in the device Keychain.
-- **Face ID / Touch ID:** iOS handles authentication. The app never accesses or stores face, fingerprint
-  or other biometric data; it only learns whether authentication succeeded.
+- **Face ID / Touch ID / Android biometrics:** iOS or Android handles authentication. The app never
+  accesses or stores face, fingerprint or other biometric data; it only learns whether authentication
+  succeeded.
 - **Data for Home Screen and Lock Screen widgets:** today's to-do titles, today's mood and your featured
   D-day are placed in a shared storage area on the device reserved for the app (App Group) so the widget
   can read them. If you add a widget, this content is shown on your Home Screen or Lock Screen and may be
@@ -190,7 +208,11 @@ In both cases your device's IP address may reach Google as part of the connectio
 | Notifications | Sends event and challenge reminders | You won't receive reminders |
 | Camera | Takes a photo to keep with today's diary | Only taking photos is unavailable |
 | Photo library | Chooses a photo to keep with today's diary | Only picking from your library is unavailable |
-| Face ID | Unlocks the app lock with Face ID (if you turn on app lock) | You unlock with the four-digit passcode |
+| Face ID (iOS) / biometrics (Android: fingerprint or face) | Unlocks the app lock with biometrics (if you turn on app lock) | You unlock with the four-digit passcode |
+| Alarms & reminders (Android) | Delivers event and challenge reminders at the exact time you set | Reminders may arrive a few minutes late |
+
+The Android app uses the system photo picker to choose photos and your device's camera app to take them,
+so it does not ask for photo library or camera permission.
 
 **You can use the app even if you decline every permission**; only the related feature stops working. The
 app does not ask for location, contacts, calendars, health data or ad tracking permission.
@@ -205,7 +227,7 @@ only as far as needed to run the service.
 |---|---|---|
 | Supabase Inc. | Authentication; storing planner records, diary photos, carrot records, purchase verification records, push tokens and reminders; running server functions | https://supabase.com/privacy |
 | Apple Inc. | Sign in with Apple, token revocation on account deletion, delivering push notifications (APNs), App Store payments and server notifications | https://www.apple.com/legal/privacy/ |
-| Google LLC | Google sign-in (if you choose it), public holiday lookup, fonts for PDFs; optional AdMob rewarded ads (§12) | https://policies.google.com/privacy |
+| Google LLC | Google sign-in (if you choose it), public holiday lookup, fonts for PDFs, Google Play Billing and Real-time developer notifications (Android); optional AdMob rewarded ads (§12) | https://policies.google.com/privacy |
 | Kakao Corp. | Kakao sign-in (if you choose it); unlinking the app from your Kakao account when you delete your account | https://www.kakao.com/policy/privacy |
 
 ### 5.1 International transfers
@@ -216,7 +238,7 @@ Some processors handle personal information outside Korea. As required by law, w
 |---|---|---|---|---|
 | Supabase Inc. | Republic of Korea (stored in the Seoul region). The processor is a US company and may process or access data from outside Korea when needed to run server functions or handle incidents | Account identifier, sign-in provider information (email, name, profile photo address, nickname), planner records (including notes, mood and D-days), diary photos, carrot records, purchase verification records, push tokens and reminder content, access logs | Whenever you use the app, over an encrypted connection | Until you delete your account (except as noted in §6) |
 | Apple Inc. | United States | (With Apple sign-in) sign-in authentication requests, token revocation request on account deletion, push tokens and reminder content (notification title, event title), account identifier on purchase | On sign-in, deletion, notification and purchase, over an encrypted connection | Per each company's policy |
-| Google LLC | United States | (With Google sign-in) sign-in authentication information; IP address when looking up holidays or fonts | On sign-in and lookup, over an encrypted connection | Per each company's policy |
+| Google LLC | United States | (With Google sign-in) sign-in authentication information; IP address when looking up holidays or fonts; (Android purchases) account identifier and purchase token | On sign-in, lookup and purchase, over an encrypted connection | Per each company's policy |
 
 If you do not want your information transferred abroad, you can use guest mode (nothing is stored on the
 server) or delete your account. In that case syncing between devices and purchases are not available.
@@ -233,8 +255,8 @@ server) or delete your account. In that case syncing between devices and purchas
 - Records of sent event reminders are deleted automatically 30 days after they are sent.
 - Access logs are deleted automatically when the server provider's log retention period ends. A record of
   the account deletion (such as the deleted account's identifier) may remain in these logs until then.
-- The payment history itself is kept by Apple, which processed the payment, under Apple's policies and
-  applicable law.
+- The payment history itself is kept by Apple or Google, whichever processed the payment, under its own
+  policies and applicable law.
 - Guest-mode records and information stored only on the device are deleted when you delete the app or use
   **Reset All Data** in Settings.
 - Electronic files are deleted in a way that cannot be recovered.
