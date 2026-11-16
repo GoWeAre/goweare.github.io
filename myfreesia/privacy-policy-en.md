@@ -1,9 +1,11 @@
 # My Freesia Privacy Policy
 
-**Last updated: 2026-11-07**
+**Last updated: 2026-11-16**
 **Effective date: 2026-10-27**
 
 **Rewarded-ad amendment notice (2026-11-03):** The advertising provisions in §12 apply from 2026-11-03. Ads are shown only after confirming you are 16 or older and completing any required consent steps.
+
+**Ads discontinued (2026-11-16):** Starting with the update that removes ads, the app no longer requests ads and no longer includes the Google AdMob SDK or Google's consent tool (UMP). Sticker sets can be tried free for 24 hours, once per set, without ads. While you use an earlier version that offers ads, the advertising provisions in §12 continue to apply.
 
 > This is a translation. If it differs from the Korean version, the Korean version prevails.
 
@@ -282,6 +284,8 @@ the change takes effect. Changes that matter more to you, such as collecting new
 - Response time: within 10 days of receipt
 
 ## 12. Optional rewarded ads and sticker trials (effective 2026-11-03)
+
+Starting with the update that removes ads, the advertising provisions in this section no longer apply. From that version, sticker trials are offered once per set without ads; only the tried set ID and its device-clock expiry are saved on this device and are not sent to our servers. A record that a set was tried stays on this device so the same set cannot be tried free again after removing the trial; deleting the app's data removes it. The text below applies to earlier versions that offer ads.
 
 Ad trials are offered only to people aged 16 or older. Before requesting ads, we ask you to declare whether you are at least 16. We do not collect your birth date; only your selected age range is saved on this device. Choosing under 16 prevents ad requests. Correct a mistaken selection in the shop under “Age for optional ads.” Basic features and sticker purchases remain available without ads.
 
